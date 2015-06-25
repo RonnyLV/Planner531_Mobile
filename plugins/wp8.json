@@ -1,0 +1,15 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "{8f00a400-1b47-11e5-b829-a5c948f0e0f2}"
+        }
+    },
+    "dependent_plugins": {}
+}
