@@ -2,10 +2,10 @@
 <widget id="com.MadeIT.Planner531" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>5/3/1 Planner</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Mobile version of 5/3/1 Planner Chrome extension https://github.com/regnars/531
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="ronalds.breikss@gmail.com" href="https://github.com/RonnyLV/Planner531_Mobile">
+        MadeIT Open Source Community
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
