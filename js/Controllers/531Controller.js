@@ -3,28 +3,6 @@
         '$scope',
         'localStorageService',
         function ($scope, localStorageService) {
-            var getAccessToken = function (provider) {
-                if (typeof window.localStorage.getItem(provider + 'User') !== 'undefined' && window.localStorage.getItem(provider + 'User') !== '') {
-                    return window.localStorage.getItem(provider + 'User');
-                }
-                return false;
-            };
-
-            var logins = {};
-            if (getAccessToken('Facebook')) {
-                logins['graph.facebook.com'] = getAccessToken('Facebook');
-            }
-            if (getAccessToken('Google')) {
-                logins['accounts.google.com'] = getAccessToken('Google');
-            }
-
-            AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-                IdentityPoolId: 'eu-west-1:db9c449a-4ff1-41d5-aa4e-bcfabbeb237c',
-                Logins: logins
-            });
-
-            AWS.config.region = 'eu-west-1';
-
             $scope.removeOutdatedDataFromLocalStorage = function () {
                 var storedPlates = this.storedPlates();
                 if (storedPlates != undefined

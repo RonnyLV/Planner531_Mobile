@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width"/>
@@ -19,12 +18,36 @@
     <script src="js/Controllers/531Controller.js"></script>
     <script src="js/FB/sdk.js"></script>
     <script>
+        function setSocialCreds(){
+            var getAccessToken = function (provider) {
+                if (typeof window.localStorage.getItem(provider + 'User') !== 'undefined' && window.localStorage.getItem(provider + 'User') !== '') {
+                    return window.localStorage.getItem(provider + 'User');
+                }
+                return false;
+            };
+
+            var logins = {};
+            if (getAccessToken('Facebook')) {
+                logins['graph.facebook.com'] = getAccessToken('Facebook');
+            }
+            if (getAccessToken('Google')) {
+                logins['accounts.google.com'] = getAccessToken('Google');
+            }
+
+            AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+                IdentityPoolId: 'eu-west-1:db9c449a-4ff1-41d5-aa4e-bcfabbeb237c',
+                Logins: logins
+            });
+
+            AWS.config.region = 'eu-west-1';
+        }
         Date.prototype.yyyymmdd = function () {
             var yyyy = this.getFullYear().toString();
             var mm = (this.getMonth() + 1).toString(); // getMonth() is zero-based
             var dd = this.getDate().toString();
             return yyyy + (mm[1] ? mm : "0" + mm[0]) + (dd[1] ? dd : "0" + dd[0]); // padding
         };
+        setSocialCreds();
     </script>
 </head>
 <body>
@@ -306,7 +329,7 @@
             'theme': 'dark',
             'onsuccess': function (googleUser) {
                 window.localStorage.setItem('googleUser', googleUser.B.id_token);
-                window.location.href = window.location.href;
+                setSocialCreds();
             },
             'onfailure': function (error) {
                 console.log(error);
@@ -319,7 +342,7 @@
         FB.getLoginStatus(function (response) {
             if (response.status === 'connected') {
                 window.localStorage.setItem('FacebookUser', response.authResponse.accessToken);
-                window.location.href = window.location.href;
+                setSocialCreds();
             }
         });
     }
