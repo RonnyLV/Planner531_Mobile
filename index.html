@@ -328,7 +328,7 @@
             'longtitle': true,
             'theme': 'dark',
             'onsuccess': function (googleUser) {
-                window.localStorage.setItem('googleUser', googleUser.B.id_token);
+                window.localStorage.setItem('GoogleUser', googleUser.B.id_token);
                 setSocialCreds();
             },
             'onfailure': function (error) {
