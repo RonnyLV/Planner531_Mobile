@@ -336,25 +336,8 @@
             }
         });
     }
-    gapi.signin2.signOut = function () {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-            window.localStorage.setItem('GoogleUser', '');
-        });
-    }
 </script>
 <script>
-    FB.getAccessToken = function () {
-        FB.getLoginStatus(function (response) {
-            if (response.status === 'connected') {
-                window.localStorage.setItem('FacebookUser', response.authResponse.accessToken);
-                setSocialCreds();
-            }
-        });
-    };
-    FB.signOut = function(){
-        window.localStorage.setItem('FacebookUser', '');
-    };
     document.addEventListener("DOMContentLoaded", function (event) {
         FB.init({
             appId: '834938419930691',
@@ -362,6 +345,23 @@
             xfbml: true,
             version: 'v2.3'
         });
+        gapi.signin2.signOut = function () {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                window.localStorage.setItem('GoogleUser', '');
+            });
+        };
+        FB.getAccessToken = function () {
+            FB.getLoginStatus(function (response) {
+                if (response.status === 'connected') {
+                    window.localStorage.setItem('FacebookUser', response.authResponse.accessToken);
+                    setSocialCreds();
+                }
+            });
+        };
+        FB.signOut = function () {
+            window.localStorage.setItem('FacebookUser', '');
+        };
     });
 
 
