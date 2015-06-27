@@ -2,202 +2,290 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="google-signin-client_id"
+          content="736837199904-g95jg3j6fr3c1h9s22c3hatg5th3u850.apps.googleusercontent.com">
     <title>5/3/1 planner</title>
+    <link rel="stylesheet" href="css/site.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="js/AWS/aws-sdk.min.js"></script>
+    <script src="js/AWS/amazon-cognito.min.js"></script>
     <script src="js/Angular/angular.min.js"></script>
     <script src="js/AngularLocalStorage/angular-local-storage.min.js"></script>
     <script src="js/JQuery/jquery-2.0.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/IdentifierGenerator.js"></script>
     <script src="js/Controllers/531Controller.js"></script>
-    <link rel="stylesheet" href="css/site.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="js/FB/sdk.js"></script>
+    <script>
+        Date.prototype.yyyymmdd = function () {
+            var yyyy = this.getFullYear().toString();
+            var mm = (this.getMonth() + 1).toString(); // getMonth() is zero-based
+            var dd = this.getDate().toString();
+            return yyyy + (mm[1] ? mm : "0" + mm[0]) + (dd[1] ? dd : "0" + dd[0]); // padding
+        };
+    </script>
 </head>
 <body>
-    <div class="page-header">
-        <a class="jm-link" href="http://store.jimwendler.com/" target="_blank">Support Jim Wendler</a>
-        <div id="header"></div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
     </div>
-    <div>
-        <div ng-app="fiveThreeOneModule" ng-controller="fiveThreeOneController" ng-init="loadFromStorage()" ng-csp>
-            <form name="calculationForm">
-                <div ng-hide="calculated">
-                    <div class="col-lg-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">Units of measurement</span>
-                            <div class="form-control">
-                                <p ng-repeat="measurementUnit in measurementUnits">
-                                    <input type="radio" ng-model="$parent.selectedMeasurementUnit" value="{{measurementUnit}}" ng-change="saveDataToLocalStorage()"> {{measurementUnit}}
-                                </p>
-                            </div>
+</div>
+<div id="fb-root"></div>
+<div class="page-header">
+    <a class="jm-link" href="http://store.jimwendler.com/" target="_blank">Support Jim Wendler</a>
+
+    <div id="header"></div>
+</div>
+<div>
+    <div class="fb-login-button" onlogin="getFBAccessToken();"></div>
+    <div id="my-signin2"></div>
+</div>
+<div>
+    <div ng-app="fiveThreeOneModule" ng-controller="fiveThreeOneController" ng-init="loadFromStorage()" ng-csp>
+        <form name="calculationForm">
+            <div ng-hide="calculated">
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">Units of measurement</span>
+
+                        <div class="form-control">
+                            <p ng-repeat="measurementUnit in measurementUnits">
+                                <input type="radio" ng-model="$parent.selectedMeasurementUnit"
+                                       value="{{measurementUnit}}" ng-change="saveDataToLocalStorage()">
+                                {{measurementUnit}} </p>
                         </div>
                     </div>
-                    <div class="main-lift col-lg-6" ng-repeat="mainLift in mainLifts">
-                        <div class="input-group">
-                            <span class="label label-default">{{mainLift.name}}</span>
-                        </div>
-                        <div class="input-group">
-                            <div class="btn-group btn-group-sm">
-                                <button type="button" class="btn btn-default"
-                                        ng-click="estimateOneRepMax(mainLift)">
-                                    <span class="glyphicon glyphicon-ok button-clickable" ng-show="mainLift.shouldEstimateOneRepMax">
+                </div>
+                <div class="main-lift col-lg-6" ng-repeat="mainLift in mainLifts">
+                    <div class="input-group">
+                        <span class="label label-default">{{mainLift.name}}</span>
+                    </div>
+                    <div class="input-group">
+                        <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-default" ng-click="estimateOneRepMax(mainLift)">
+                                    <span class="glyphicon glyphicon-ok button-clickable"
+                                          ng-show="mainLift.shouldEstimateOneRepMax">
                                     </span> Estimate 1 rep max
-                                </button>
-                                <button type="button" class="btn btn-default"
-                                        ng-click="enterOneRepMax(mainLift)">
-                                    <span class="glyphicon glyphicon-ok button-clickable" ng-hide="mainLift.shouldEstimateOneRepMax">
+                            </button>
+                            <button type="button" class="btn btn-default" ng-click="enterOneRepMax(mainLift)">
+                                    <span class="glyphicon glyphicon-ok button-clickable"
+                                          ng-hide="mainLift.shouldEstimateOneRepMax">
                                     </span> Enter 1 rep max
-                                </button>
-                            </div>
-                        </div>
-                        <div class="input-group" ng-show="mainLift.shouldEstimateOneRepMax">
-                            <span class="input-group-addon">Max reps</span>
-                            <input class="form-control" type="number" min="1" max="1000" ng-model="mainLift.maxReps" ng-change="calculateEstimatedOneRepMax(mainLift)" ng-required="mainLift.shouldEstimateOneRepMax" />
-                            <span class="input-group-addon">Max weight on reps</span>
-                            <input class="form-control" type="number" min="1" max="1000" ng-model="mainLift.maxWeight" ng-change="calculateEstimatedOneRepMax(mainLift)" ng-required="mainLift.shouldEstimateOneRepMax" />
-                            <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
-                            <span class="input-group-addon">Estimated 1RM </span>
-                            <span class="input-group-addon">{{mainLift.oneRepMax}}</span>
-                            <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
-                        </div>
-                        <div class="input-group" ng-hide="mainLift.shouldEstimateOneRepMax">
-                            <span class="input-group-addon">1RM</span>
-                            <input class="form-control" type="number" min="1" max="1000" ng-model="mainLift.oneRepMax" ng-required="!mainLift.shouldEstimateOneRepMax" placeholder="Enter one rep max" ng-change="saveDataToLocalStorage()" />
-                            <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">90% of 1 RM </span>
-                            <span class="input-group-addon">{{calculateNinetyPercentOfOneRepMax(mainLift)}}</span>
-                            <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
+                            </button>
                         </div>
                     </div>
+                    <div class="input-group" ng-show="mainLift.shouldEstimateOneRepMax">
+                        <span class="input-group-addon">Max reps</span>
+                        <input class="form-control" type="number" min="1" max="1000" ng-model="mainLift.maxReps"
+                               ng-change="calculateEstimatedOneRepMax(mainLift)"
+                               ng-required="mainLift.shouldEstimateOneRepMax"/>
+                        <span class="input-group-addon">Max weight on reps</span>
+                        <input class="form-control" type="number" min="1" max="1000" ng-model="mainLift.maxWeight"
+                               ng-change="calculateEstimatedOneRepMax(mainLift)"
+                               ng-required="mainLift.shouldEstimateOneRepMax"/>
+                        <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
+                        <span class="input-group-addon">Estimated 1RM </span>
+                        <span class="input-group-addon">{{mainLift.oneRepMax}}</span>
+                        <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
+                    </div>
+                    <div class="input-group" ng-hide="mainLift.shouldEstimateOneRepMax">
+                        <span class="input-group-addon">1RM</span>
+                        <input class="form-control" type="number" min="1" max="1000" ng-model="mainLift.oneRepMax"
+                               ng-required="!mainLift.shouldEstimateOneRepMax" placeholder="Enter one rep max"
+                               ng-change="saveDataToLocalStorage()"/>
+                        <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">90% of 1 RM </span>
+                        <span class="input-group-addon">{{calculateNinetyPercentOfOneRepMax(mainLift)}}</span>
+                        <span class="input-group-addon">{{selectedMeasurementUnit}}</span>
+                    </div>
+                </div>
 
 
-                    <div class="col-lg-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Plates used in calculations</div>
-                            <div class="panel-body">
-                                <div class="col-sm-3" ng-repeat="availablePlate in getAvailablePlates()">
-                                    <span ng-class="{'label label-default strike': !availablePlate.usedForCalculations, 'label label-default': availablePlate.usedForCalculations}">{{availablePlate.weight}} {{availablePlate.measurementUnit}}</span>
-                                    <div class="calc-plate btn-group btn-group-vertical btn-group-xs">
-                                        <button type="button" ng-class="{'btn btn-default btn-sm plateUsedForCalculation': availablePlate.usedForCalculations, 'btn btn-default btn-sm': !availablePlate.usedForCalculations}" ng-click="addPlateToCalculation(availablePlate)" ng-disabled="availablePlate.usedForCalculations">
-                                            <span class="glyphicon glyphicon-ok"></span>
-                                        </button>
-                                        <button type="button" ng-class="{'btn btn-default btn-sm plateNotUsedForCalculation': !availablePlate.usedForCalculations, 'btn btn-default btn-sm': availablePlate.usedForCalculations}" ng-click="removePlateFromCalculation(availablePlate)" ng-disabled="!availablePlate.usedForCalculations">
-                                            <span class="glyphicon glyphicon-remove"></span>
-                                        </button>
-                                    </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Plates used in calculations</div>
+                        <div class="panel-body">
+                            <div class="col-sm-3" ng-repeat="availablePlate in getAvailablePlates()">
+                                <span ng-class="{'label label-default strike': !availablePlate.usedForCalculations, 'label label-default': availablePlate.usedForCalculations}">{{availablePlate.weight}} {{availablePlate.measurementUnit}}</span>
+
+                                <div class="calc-plate btn-group btn-group-vertical btn-group-xs">
+                                    <button type="button"
+                                            ng-class="{'btn btn-default btn-sm plateUsedForCalculation': availablePlate.usedForCalculations, 'btn btn-default btn-sm': !availablePlate.usedForCalculations}"
+                                            ng-click="addPlateToCalculation(availablePlate)"
+                                            ng-disabled="availablePlate.usedForCalculations">
+                                        <span class="glyphicon glyphicon-ok"></span>
+                                    </button>
+                                    <button type="button"
+                                            ng-class="{'btn btn-default btn-sm plateNotUsedForCalculation': !availablePlate.usedForCalculations, 'btn btn-default btn-sm': availablePlate.usedForCalculations}"
+                                            ng-click="removePlateFromCalculation(availablePlate)"
+                                            ng-disabled="!availablePlate.usedForCalculations">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </button>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <button type="button" class="calc-button btn btn-default btn-lg"
-                                        ng-click="calculateMesocycle()" ng-disabled="!isFormValid()">
-                                    <span ng-class="{'glyphicon glyphicon-repeat button-clickable': isFormValid(), 'glyphicon glyphicon-repeat button-unclickable': !isFormValid()}">
-                                    </span> Calculate mesocycle
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </form>
 
-            <div ng-show="calculated">
-                <div class="panel panel-default">
-                    <div class="panel panel-heading">
-                        <button type="button" class="btn btn-default btn-lg" ng-click="recalculateMesocycle()" ng-hide="printableVersion">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <button type="button" class="calc-button btn btn-default btn-lg"
+                                    ng-click="calculateMesocycle()" ng-disabled="!isFormValid()">
+                                    <span ng-class="{'glyphicon glyphicon-repeat button-clickable': isFormValid(), 'glyphicon glyphicon-repeat button-unclickable': !isFormValid()}">
+                                    </span> Calculate mesocycle
+                            </button>
+                            <button type="button" class="btn btn-default" ng-click="showHistory()">Load from History
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div ng-show="calculated">
+            <div class="panel panel-default">
+                <div class="panel panel-heading">
+                    <button type="button" class="btn btn-default btn-lg" ng-click="recalculateMesocycle()"
+                            ng-hide="printableVersion">
                             <span class=" glyphicon glyphicon-refresh button-clickable">
                             </span> Change data
+                    </button>
+                    <span ng-class="{'label label-default strike': !printableVersion, 'label label-default': printableVersion}">Printable version</span>
+
+                    <div class="calc-plate btn-group btn-group-vertical btn-group-xs">
+                        <button type="button"
+                                ng-class="{'btn btn-default btn-sm plateUsedForCalculation': printableVersion, 'btn btn-default btn-sm': !printableVersion}"
+                                ng-click="enablePrintableVersion()" ng-disabled="printableVersion">
+                            <span class="glyphicon glyphicon-ok"></span>
                         </button>
-                        <span ng-class="{'label label-default strike': !printableVersion, 'label label-default': printableVersion}">Printable version</span>
-                        <div class="calc-plate btn-group btn-group-vertical btn-group-xs">
-                            <button type="button" ng-class="{'btn btn-default btn-sm plateUsedForCalculation': printableVersion, 'btn btn-default btn-sm': !printableVersion}" ng-click="enablePrintableVersion()" ng-disabled="printableVersion">
-                                <span class="glyphicon glyphicon-ok"></span>
-                            </button>
-                            <button type="button" ng-class="{'btn btn-default btn-sm plateNotUsedForCalculation': !printableVersion, 'btn btn-default btn-sm': printableVersion}" ng-click="disablePrintableVersion(availablePlate)" ng-disabled="!printableVersion">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </div>
-                        <button type="button" class="btn btn-default btn-lg" ng-click="printPage()" ng-show="printableVersion">
-                            <span class=" glyphicon glyphicon-print button-clickable">
-                            </span> Print
+                        <button type="button"
+                                ng-class="{'btn btn-default btn-sm plateNotUsedForCalculation': !printableVersion, 'btn btn-default btn-sm': printableVersion}"
+                                ng-click="disablePrintableVersion(availablePlate)" ng-disabled="!printableVersion">
+                            <span class="glyphicon glyphicon-remove"></span>
                         </button>
                     </div>
-                    <div class="panel panel-body">
-                        <div class="accessory-work-template col-lg-12">
-                            <div class="input-group" ng-hide="printableVersion">
-                                <span class="input-group-addon">Accessory work template</span>
-                                <div class="form-control">
-                                    <p ng-repeat="template in accessoryWorkPlanTemplates">
-                                        <input type="radio" ng-model="$parent.selectedAccessoryWorkTemplate" value="{{template}}" ng-change="$parent.loadAccessoryWorkTemplate()"> {{template}}
-                                    </p>
-                                </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">Mesocycle Name</span>
+                        <input class="form-control" type="text" ng-model="mesocycleName" required="required"/>
+                        <button type="button" class="btn btn-default" ng-click="sync()">Save to History</button>
+                    </div>
+                    <button type="button" class="btn btn-default btn-lg" ng-click="printPage()"
+                            ng-show="printableVersion">
+                            <span class=" glyphicon glyphicon-print button-clickable">
+                            </span> Print
+                    </button>
+                </div>
+                <div class="panel panel-body">
+                    <div class="accessory-work-template col-lg-12">
+                        <div class="input-group" ng-hide="printableVersion">
+                            <span class="input-group-addon">Accessory work template</span>
+
+                            <div class="form-control">
+                                <p ng-repeat="template in accessoryWorkPlanTemplates">
+                                    <input type="radio" ng-model="$parent.selectedAccessoryWorkTemplate"
+                                           value="{{template}}" ng-change="$parent.loadAccessoryWorkTemplate()">
+                                    {{template}} </p>
                             </div>
                         </div>
-                        <div class="page-break col-lg-3" ng-repeat="mainLift in mainLifts">
-                            <span class="label label-default" ng-hide="printableVersion">{{mainLift.name}}</span>
-                            <button type="button" class="btn btn-default btn-xs" ng-click="addAccessoryWorkExcercise(mainLift)" ng-hide="printableVersion">
+                    </div>
+                    <div class="page-break col-lg-3" ng-repeat="mainLift in mainLifts">
+                        <span class="label label-default" ng-hide="printableVersion">{{mainLift.name}}</span>
+                        <button type="button" class="btn btn-default btn-xs"
+                                ng-click="addAccessoryWorkExcercise(mainLift)" ng-hide="printableVersion">
                                 <span class=" glyphicon glyphicon-plus button-clickable">
                                 </span> Add accessory work excercise
+                        </button>
+                        <div class="accessory-excercise"
+                             ng-repeat="accessoryWorkExcercise in mainLift.accessoryWorkExcercises"
+                             ng-hide="printableVersion">
+                            <div class="input-group">
+                                <span class="input-group-addon">Acc. exc.</span>
+                                <input class="form-control" type="text" ng-model="accessoryWorkExcercise.name"
+                                       ng-change="saveDataToLocalStorage()"/>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Sets</span>
+                                <input class="form-control" type="number" min="1" max="20"
+                                       ng-model="accessoryWorkExcercise.sets" ng-change="saveDataToLocalStorage()"/>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Reps</span>
+                                <input class="form-control" type="number" min="1" max="20"
+                                       ng-model="accessoryWorkExcercise.reps" ng-change="saveDataToLocalStorage()"/>
+                            </div>
+                            <button type="button" class="btn btn-default btn-xs"
+                                    ng-click="removeAccessoryWorkExcercise(mainLift, accessoryWorkExcercise)"
+                                    ng-hide="printableVersion">
+                                    <span class=" glyphicon glyphicon-minus button-clickable">
+                                    </span> Remove accessory work excercise
                             </button>
-                            <div class="accessory-excercise" ng-repeat="accessoryWorkExcercise in mainLift.accessoryWorkExcercises" ng-hide="printableVersion">
+                        </div>
+                        <div class="cycle" ng-repeat="cycleWeight in mainLift.cycleWeights">
+                            <span class="label label-default" ng-show="printableVersion">{{mainLift.name}}</span>
+                            <span class="label label-primary">Cycle - {{cycleWeight.cycle}}</span>
+                            <span class="label label-primary" ng-show="cycleWeight.isDeload">DELOAD</span>
+
+                            <div class="set" ng-repeat="setWeight in cycleWeight.setWeights">
+                                <span class="label label-success">Set {{setWeight.set}}</span>
+                                <span class="label label-danger">{{setWeight.weight.weightToUse}} {{selectedMeasurementUnit}}</span>
+                                x
+                                <span class="label label-danger">{{setWeight.reps}} <span
+                                        ng-show="setWeight.canDoMoreReps">+</span> reps</span>
+
+                                <span class="label label-info">Calculated weight - {{setWeight.weight.rawWeight}} {{selectedMeasurementUnit}}</span>
+                                <span class="label label-warning">{{setWeight.percentages}} % from 90% of 1RM </span>
+
+                                <div class="plates">
+                                    <span ng-show="{{setWeight.weight.platesVisible}}" class="label label-default">Plates:</span>
+
+                                    <div ng-repeat="plateToUse in setWeight.weight.platesToUse">
+                                        <span class="plateCount">{{plateToUse.plateCount}}</span>
+                                        x <span
+                                            class="badge">{{plateToUse.plateWeight}} {{selectedMeasurementUnit}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accessory-excercise"
+                                 ng-repeat="accessoryWorkExcercise in mainLift.accessoryWorkExcercises"
+                                 ng-show="printableVersion">
                                 <div class="input-group">
                                     <span class="input-group-addon">Acc. exc.</span>
-                                    <input class="form-control" type="text" ng-model="accessoryWorkExcercise.name" ng-change="saveDataToLocalStorage()" />
+                                    <span class="input-group-addon">{{accessoryWorkExcercise.name}}</span>
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">Sets</span>
-                                    <input class="form-control" type="number" min="1" max="20" ng-model="accessoryWorkExcercise.sets" ng-change="saveDataToLocalStorage()" />
+                                    <span class="input-group-addon" ng-hide="cycleWeight.isDeload">{{accessoryWorkExcercise.sets}}</span>
+                                    <span class="input-group-addon" ng-show="cycleWeight.isDeload">DELOAD</span>
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">Reps</span>
-                                    <input class="form-control" type="number" min="1" max="20" ng-model="accessoryWorkExcercise.reps" ng-change="saveDataToLocalStorage()" />
-                                </div>
-                                <button type="button" class="btn btn-default btn-xs" ng-click="removeAccessoryWorkExcercise(mainLift, accessoryWorkExcercise)" ng-hide="printableVersion">
-                                    <span class=" glyphicon glyphicon-minus button-clickable">
-                                    </span> Remove accessory work excercise
-                                </button>
-                            </div>
-                            <div class="cycle" ng-repeat="cycleWeight in mainLift.cycleWeights">
-                                <span class="label label-default" ng-show="printableVersion">{{mainLift.name}}</span>
-                                <span class="label label-primary">Cycle - {{cycleWeight.cycle}}</span>
-                                <span class="label label-primary" ng-show="cycleWeight.isDeload">DELOAD</span>
-                                <div class="set" ng-repeat="setWeight in cycleWeight.setWeights">
-                                    <span class="label label-success">Set {{setWeight.set}}</span>
-                                    <span class="label label-danger">{{setWeight.weight.weightToUse}} {{selectedMeasurementUnit}}</span>
-                                    x
-                                    <span class="label label-danger">{{setWeight.reps}} <span ng-show="setWeight.canDoMoreReps">+</span> reps</span>
-
-                                    <span class="label label-info">Calculated weight - {{setWeight.weight.rawWeight}} {{selectedMeasurementUnit}}</span>
-                                    <span class="label label-warning">{{setWeight.percentages}} % from 90% of 1RM </span>
-                                    <div class="plates">
-                                        <span ng-show="{{setWeight.weight.platesVisible}}" class="label label-default">Plates:</span>
-                                        <div ng-repeat="plateToUse in setWeight.weight.platesToUse">
-                                            <span class="plateCount">{{plateToUse.plateCount}}</span>
-                                            x <span class="badge">{{plateToUse.plateWeight}} {{selectedMeasurementUnit}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accessory-excercise" ng-repeat="accessoryWorkExcercise in mainLift.accessoryWorkExcercises" ng-show="printableVersion">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">Acc. exc.</span>
-                                        <span class="input-group-addon">{{accessoryWorkExcercise.name}}</span>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-addon">Sets</span>
-                                        <span class="input-group-addon" ng-hide="cycleWeight.isDeload">{{accessoryWorkExcercise.sets}}</span>
-                                        <span class="input-group-addon" ng-show="cycleWeight.isDeload">DELOAD</span>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-addon">Reps</span>
-                                        <span class="input-group-addon" ng-hide="cycleWeight.isDeload">{{accessoryWorkExcercise.reps}}</span>
-                                        <span class="input-group-addon" ng-show="cycleWeight.isDeload">DELOAD</span>
-                                    </div>
+                                    <span class="input-group-addon" ng-hide="cycleWeight.isDeload">{{accessoryWorkExcercise.reps}}</span>
+                                    <span class="input-group-addon" ng-show="cycleWeight.isDeload">DELOAD</span>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +293,44 @@
                 </div>
             </div>
         </div>
-
     </div>
+</div>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+<script>
+    function renderButton() {
+        gapi.signin2.render('my-signin2', {
+            'scope': 'https://www.googleapis.com/auth/plus.login',
+            'width': 200,
+            'height': 50,
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': function (googleUser) {
+                window.localStorage.setItem('googleUser', googleUser.B.id_token);
+            },
+            'onfailure': function (error) {
+                console.log(error);
+            }
+        });
+    }
+</script>
+<script>
+    function getFBAccessToken() {
+        FB.getLoginStatus(function (response) {
+            if (response.status === 'connected') {
+                window.localStorage.setItem('FacebookUser', response.authResponse.accessToken);
+            }
+        });
+    }
+    document.addEventListener("DOMContentLoaded", function (event) {
+        FB.init({
+            appId: '834938419930691',
+            status: true,
+            xfbml: true,
+            version: 'v2.3'
+        });
+    });
+
+
+</script>
 </body>
 </html>
