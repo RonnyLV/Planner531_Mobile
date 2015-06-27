@@ -306,6 +306,7 @@
             'theme': 'dark',
             'onsuccess': function (googleUser) {
                 window.localStorage.setItem('googleUser', googleUser.B.id_token);
+                window.location.href = window.location.href;
             },
             'onfailure': function (error) {
                 console.log(error);
@@ -318,6 +319,7 @@
         FB.getLoginStatus(function (response) {
             if (response.status === 'connected') {
                 window.localStorage.setItem('FacebookUser', response.authResponse.accessToken);
+                window.location.href = window.location.href;
             }
         });
     }
