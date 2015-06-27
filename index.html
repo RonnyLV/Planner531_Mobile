@@ -18,7 +18,7 @@
     <script src="js/Controllers/531Controller.js"></script>
     <script src="js/FB/sdk.js"></script>
     <script>
-        function setSocialCreds(){
+        function setSocialCreds() {
             var getAccessToken = function (provider) {
                 if (typeof window.localStorage.getItem(provider + 'User') !== 'undefined' && window.localStorage.getItem(provider + 'User') !== '') {
                     return window.localStorage.getItem(provider + 'User');
@@ -82,7 +82,7 @@
     <div id="header"></div>
 </div>
 <div>
-    <div class="fb-login-button" onlogin="getFBAccessToken();"></div>
+    <div class="fb-login-button" onlogin="FB.getAccessToken();"></div>
     <div id="my-signin2"></div>
 </div>
 <div>
@@ -336,16 +336,25 @@
             }
         });
     }
+    gapi.signin2.signOut = function () {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            window.localStorage.setItem('GoogleUser', '');
+        });
+    }
 </script>
 <script>
-    function getFBAccessToken() {
+    FB.getAccessToken = function () {
         FB.getLoginStatus(function (response) {
             if (response.status === 'connected') {
                 window.localStorage.setItem('FacebookUser', response.authResponse.accessToken);
                 setSocialCreds();
             }
         });
-    }
+    };
+    FB.signOut = function(){
+        window.localStorage.setItem('FacebookUser', '');
+    };
     document.addEventListener("DOMContentLoaded", function (event) {
         FB.init({
             appId: '834938419930691',
