@@ -1,7 +1,515 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3c62dc2-e8cf-4c34-84d8-48792a471e10" name="Default" comment="" />
+    <list default="true" id="a3c62dc2-e8cf-4c34-84d8-48792a471e10" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\config.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\hooks\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\info.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.gradle\2.2.1\taskArtifacts\cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.gradle\2.2.1\taskArtifacts\cache.properties.lock" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.gradle\2.2.1\taskArtifacts\fileHashes.bin" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.gradle\2.2.1\taskArtifacts\fileSnapshots.bin" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.gradle\2.2.1\taskArtifacts\outputFileStates.bin" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.gradle\2.2.1\taskArtifacts\taskArtifacts.bin" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\.project" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\.project" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\generated\source\buildConfig\debug\org\apache\cordova\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\bundles\debug\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\bundles\debug\classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\AuthenticationToken.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CallbackContext.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\Config.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\ConfigXmlParser.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaActivity$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaArgs.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaBridge.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaClientCertRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper$Result.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaDialogsHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaHttpAuthHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaInterfaceImpl$ActivityResultHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaInterfaceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaPlugin.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaPreferences.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaResourceApi$OpenForReadResult.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaResourceApi.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewEngine$Client.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewEngine$EngineView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewImpl$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewImpl$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewImpl$EngineClient$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewImpl$EngineClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewImpl$EngineClient.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CordovaWebViewImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CoreAndroid$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CoreAndroid$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CoreAndroid$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CoreAndroid$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CoreAndroid$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\CoreAndroid.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\ExposedJsApi.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\ICordovaClientCertRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\ICordovaCookieManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\ICordovaHttpAuthHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\LOG.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$BridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$JsMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$LoadUrlBridgeMode$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$LoadUrlBridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$NoOpBridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$OnlineEventsBridgeMode$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue$OnlineEventsBridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\NativeToJsMessageQueue.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\PluginEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\PluginManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\PluginResult$Status.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\PluginResult.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\Whitelist$URLPattern.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\Whitelist.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemCookieManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemExposedJsApi.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebChromeClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebChromeClient$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebChromeClient$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebChromeClient$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebChromeClient$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebChromeClient.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebViewClient.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebViewEngine$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebViewEngine$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\classes\debug\org\apache\cordova\engine\SystemWebViewEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\incremental\aidl\debug\dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\incremental\mergeAssets\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\intermediates\incremental\packageResources\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\outputs\aar\CordovaLib-debug.aar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\build\tmp\packageDebugJar\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\cordova.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\AuthenticationToken.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CallbackContext.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\Config.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\ConfigXmlParser.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaArgs.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaBridge.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaClientCertRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaDialogsHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaHttpAuthHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterfaceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPreferences.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaResourceApi.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebView.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\CoreAndroid.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\ExposedJsApi.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaClientCertRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaCookieManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaHttpAuthHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\LOG.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\NativeToJsMessageQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\PluginEntry.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\PluginManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\PluginResult.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\Whitelist.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemCookieManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemExposedJsApi.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebChromeClient.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebView.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebViewClient.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebViewEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\assets\_where-is-www.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\android_sdk_version" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\build" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\build.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\check_reqs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\clean" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\clean.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\defaults.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\android_sdk_version.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\appinfo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\check_reqs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\device.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\emulator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\exec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\install-device" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\install-device.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\install-emulator" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\install-emulator.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\list-devices" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\list-devices.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\list-emulator-images" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\list-emulator-images.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\list-started-emulators" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\list-started-emulators.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\log.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\plugin-build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\run.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\spawn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\start-emulator" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\lib\start-emulator.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\log" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\log.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\nopt\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\nopt\lib\nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\nopt\node_modules\abbrev\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\nopt\node_modules\abbrev\abbrev.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\nopt\node_modules\abbrev\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\nopt\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\benchmark\compare-with-callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\benchmark\scenarios.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\q.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\q\queue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\.documentup.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\bin\shjs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\global.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\make.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\scripts\generate-docs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\scripts\run-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\shell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\cat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\cd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\chmod.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\cp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\dirs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\echo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\error.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\exec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\find.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\grep.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\ls.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\mkdir.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\mv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\popd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\pushd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\pwd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\rm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\sed.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\tempdir.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\to.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\toEnd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\shelljs\src\which.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\which\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\which\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\which\bin\which" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\which\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\node_modules\which\which.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\run" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\run.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\version" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\cordova\version.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\platform_www\cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-hdpi\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-land-hdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-land-ldpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-land-mdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-land-xhdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-port-hdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-port-ldpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-port-mdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-port-xhdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable-xxhdpi\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\values\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\xml\config.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\src\com\MadeIT\Planner531\MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\src\com\phonegap\helloworld\MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\src\org\apache\cordova\whitelist\WhitelistPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\platforms.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\App.xaml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\App.xaml.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\ApplicationIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Hello_World.csproj" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Hello_World.sln" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Images\appbar.back.rest.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Images\appbar.close.rest.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Images\appbar.feature.video.rest.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Images\appbar.next.rest.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Images\appbar.save.rest.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Images\appbar.stop.rest.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\MainPage.xaml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\MainPage.xaml.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Properties\AppManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Properties\AssemblyInfo.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\Properties\WMAppManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\SplashScreenImage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\VERSION" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\config.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\build" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\build.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\clean" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\clean.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\defaults.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\MSBuildTools.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\clean.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\device.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\install-device.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\install-emulator.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\list-devices.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\list-emulator-images.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\list-started-emulators.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\package.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\run.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\start-emulator.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\target-list.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\utils.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\win_os_version.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\lib\win_sdk_version.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\log.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\benchmark\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\benchmark\bench.gnu" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\benchmark\bench.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\benchmark\benchmark-native.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\benchmark\benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\test\compare_v1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\test\test.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\node-uuid\uuid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\bin\nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\examples\my-program.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\lib\nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\node_modules\abbrev\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\node_modules\abbrev\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\node_modules\abbrev\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\node_modules\abbrev\abbrev.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\node_modules\abbrev\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\node_modules\abbrev\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\nopt\test\basic.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\benchmark\compare-with-callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\benchmark\scenarios.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\q.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\q\queue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\.documentup.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\bin\shjs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\global.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\make.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\scripts\generate-docs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\scripts\run-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\shell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\cat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\cd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\chmod.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\cp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\dirs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\echo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\error.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\exec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\find.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\grep.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\ln.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\ls.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\mkdir.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\mv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\popd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\pushd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\pwd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\rm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\sed.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\tempdir.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\to.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\toEnd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\node_modules\shelljs\src\which.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\run" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\run.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\version.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\win_os_version.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordova\win_sdk_version.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\BrowserMouseHelper.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\CommandFactory.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\Commands\BaseCommand.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\ConfigHandler.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\ConsoleHelper.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\CordovaCommandCall.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\CordovaView.xaml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\CordovaView.xaml.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\IBrowserDecorator.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\ImageExifHelper.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\JSON\JsonHelper.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\MimeTypeMapper.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\NativeExecution.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\OrientationHelper.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\PluginResult.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\ScriptCallback.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\cordovalib\XHRHelper.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\wp8\platform_www\cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\android.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\RELEASENOTES.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\de\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\es\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\fr\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\it\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\ja\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\ko\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\pl\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\doc\zh\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\src\android\WhitelistPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\src\ios\CDVNavigationWhitelistPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\src\ios\CDVNavigationWhitelistPlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\cordova-plugin-whitelist\whitelist.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\fetch.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\plugins\wp8.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\icon.png" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\platforms\android\res\drawable\icon.png" afterPath="$PROJECT_DIR$/icon.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\css\index.css" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\css\site.css" afterPath="$PROJECT_DIR$/css/site.css" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\531_1400x560_3.jpg" afterPath="$PROJECT_DIR$/img/531_1400x560_3.jpg" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\531_1400x560_3.png" afterPath="$PROJECT_DIR$/img/531_1400x560_3.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\531_440x280_4.jpg" afterPath="$PROJECT_DIR$/img/531_440x280_4.jpg" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\531_440x280_4.png" afterPath="$PROJECT_DIR$/img/531_440x280_4.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\531_920x680_3.jpg" afterPath="$PROJECT_DIR$/img/531_920x680_3.jpg" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\531_920x680_3.png" afterPath="$PROJECT_DIR$/img/531_920x680_3.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\icon_128.png" afterPath="$PROJECT_DIR$/img/icon_128.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\icon_128_128.png" afterPath="$PROJECT_DIR$/img/icon_128_128.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\icon_16.png" afterPath="$PROJECT_DIR$/img/icon_16.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\icon_48.png" afterPath="$PROJECT_DIR$/img/icon_48.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\img\logo.png" afterPath="$PROJECT_DIR$/img/logo.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\AWS\amazon-cognito.min.js" afterPath="$PROJECT_DIR$/js/AWS/amazon-cognito.min.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\AWS\aws-sdk.min.js" afterPath="$PROJECT_DIR$/js/AWS/aws-sdk.min.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\AngularLocalStorage\angular-local-storage.min.js" afterPath="$PROJECT_DIR$/js/AngularLocalStorage/angular-local-storage.min.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\Angular\angular.min.js" afterPath="$PROJECT_DIR$/js/Angular/angular.min.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\Angular\angular.min.js.map" afterPath="$PROJECT_DIR$/js/Angular/angular.min.js.map" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\Controllers\531Controller.js" afterPath="$PROJECT_DIR$/js/Controllers/531Controller.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\FB\sdk.js" afterPath="$PROJECT_DIR$/js/FB/sdk.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\IdentifierGenerator.js" afterPath="$PROJECT_DIR$/js/IdentifierGenerator.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\JQuery\jquery-2.0.3.min.js" afterPath="$PROJECT_DIR$/js/JQuery/jquery-2.0.3.min.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\js\index.js" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\.pgbomit" afterPath="$PROJECT_DIR$/res/.pgbomit" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\android\icon-36-ldpi.png" afterPath="$PROJECT_DIR$/res/icon/android/icon-36-ldpi.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\android\icon-48-mdpi.png" afterPath="$PROJECT_DIR$/res/icon/android/icon-48-mdpi.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\android\icon-72-hdpi.png" afterPath="$PROJECT_DIR$/res/icon/android/icon-72-hdpi.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\android\icon-96-xhdpi.png" afterPath="$PROJECT_DIR$/res/icon/android/icon-96-xhdpi.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\bada-wac\icon-48-type5.png" afterPath="$PROJECT_DIR$/res/icon/bada-wac/icon-48-type5.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\bada-wac\icon-50-type3.png" afterPath="$PROJECT_DIR$/res/icon/bada-wac/icon-50-type3.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\bada-wac\icon-80-type4.png" afterPath="$PROJECT_DIR$/res/icon/bada-wac/icon-80-type4.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\bada\icon-128.png" afterPath="$PROJECT_DIR$/res/icon/bada/icon-128.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\blackberry\icon-80.png" afterPath="$PROJECT_DIR$/res/icon/blackberry/icon-80.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\ios\icon-57-2x.png" afterPath="$PROJECT_DIR$/res/icon/ios/icon-57-2x.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\ios\icon-57.png" afterPath="$PROJECT_DIR$/res/icon/ios/icon-57.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\ios\icon-72-2x.png" afterPath="$PROJECT_DIR$/res/icon/ios/icon-72-2x.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\ios\icon-72.png" afterPath="$PROJECT_DIR$/res/icon/ios/icon-72.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\tizen\icon-128.png" afterPath="$PROJECT_DIR$/res/icon/tizen/icon-128.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\webos\icon-64.png" afterPath="$PROJECT_DIR$/res/icon/webos/icon-64.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\windows-phone\icon-173-tile.png" afterPath="$PROJECT_DIR$/res/icon/windows-phone/icon-173-tile.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\windows-phone\icon-48.png" afterPath="$PROJECT_DIR$/res/icon/windows-phone/icon-48.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\icon\windows-phone\icon-62-tile.png" afterPath="$PROJECT_DIR$/res/icon/windows-phone/icon-62-tile.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-hdpi-landscape.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-hdpi-landscape.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-hdpi-portrait.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-hdpi-portrait.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-ldpi-landscape.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-ldpi-landscape.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-ldpi-portrait.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-ldpi-portrait.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-mdpi-landscape.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-mdpi-landscape.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-mdpi-portrait.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-mdpi-portrait.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-xhdpi-landscape.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-xhdpi-landscape.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\android\screen-xhdpi-portrait.png" afterPath="$PROJECT_DIR$/res/screen/android/screen-xhdpi-portrait.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\bada-wac\screen-type3.png" afterPath="$PROJECT_DIR$/res/screen/bada-wac/screen-type3.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\bada-wac\screen-type4.png" afterPath="$PROJECT_DIR$/res/screen/bada-wac/screen-type4.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\bada-wac\screen-type5.png" afterPath="$PROJECT_DIR$/res/screen/bada-wac/screen-type5.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\bada\screen-portrait.png" afterPath="$PROJECT_DIR$/res/screen/bada/screen-portrait.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\blackberry\screen-225.png" afterPath="$PROJECT_DIR$/res/screen/blackberry/screen-225.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-ipad-landscape-2x.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-ipad-landscape-2x.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-ipad-landscape.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-ipad-landscape.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-ipad-portrait-2x.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-ipad-portrait-2x.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-ipad-portrait.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-ipad-portrait.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-iphone-landscape-2x.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-iphone-landscape-2x.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-iphone-landscape.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-iphone-landscape.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-iphone-portrait-2x.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-iphone-portrait-2x.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-iphone-portrait-568h-2x.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-iphone-portrait-568h-2x.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\ios\screen-iphone-portrait.png" afterPath="$PROJECT_DIR$/res/screen/ios/screen-iphone-portrait.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\tizen\README.md" afterPath="$PROJECT_DIR$/res/screen/tizen/README.md" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\webos\screen-64.png" afterPath="$PROJECT_DIR$/res/screen/webos/screen-64.png" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\res\screen\windows-phone\screen-portrait.jpg" afterPath="$PROJECT_DIR$/res/screen/windows-phone/screen-portrait.jpg" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\spec.html" afterPath="$PROJECT_DIR$/spec.html" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\spec\helper.js" afterPath="$PROJECT_DIR$/spec/helper.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\spec\index.js" afterPath="$PROJECT_DIR$/spec/index.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\spec\lib\jasmine-1.2.0\MIT.LICENSE" afterPath="$PROJECT_DIR$/spec/lib/jasmine-1.2.0/MIT.LICENSE" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\spec\lib\jasmine-1.2.0\jasmine-html.js" afterPath="$PROJECT_DIR$/spec/lib/jasmine-1.2.0/jasmine-html.js" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\spec\lib\jasmine-1.2.0\jasmine.css" afterPath="$PROJECT_DIR$/spec/lib/jasmine-1.2.0/jasmine.css" />
+      <change type="MOVED" beforePath="C:\Users\ronalds.breikss\Git\Planner531\www\spec\lib\jasmine-1.2.0\jasmine.js" afterPath="$PROJECT_DIR$/spec/lib/jasmine-1.2.0/jasmine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Planner531.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,29 +533,29 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61174244" vertical-offset="0" max-vertical-offset="5814">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.76787955" vertical-offset="1547" max-vertical-offset="5814">
+              <caret line="127" column="38" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="angular-local-storage.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/AngularLocalStorage/angular-local-storage.min.js">
+        <entry file="file://$PROJECT_DIR$/js/AngularLocalStorage/angular-local-storage.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3961">
-              <caret line="193" column="14" selection-start-line="193" selection-start-column="14" selection-end-line="193" selection-end-column="14" />
+              <caret line="185" column="32" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="spec.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/spec.html">
+        <entry file="file://$PROJECT_DIR$/spec.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="26.846153" vertical-offset="698" max-vertical-offset="1258">
+            <state vertical-scroll-proportion="0.0" vertical-offset="698" max-vertical-offset="1258">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -55,9 +563,9 @@
         </entry>
       </file>
       <file leaf-file-name="531Controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/Controllers/531Controller.js">
+        <entry file="file://$PROJECT_DIR$/js/Controllers/531Controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14586">
+            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="14586">
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
@@ -65,9 +573,9 @@
         </entry>
       </file>
       <file leaf-file-name="amazon-cognito.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/AWS/amazon-cognito.min.js">
+        <entry file="file://$PROJECT_DIR$/js/AWS/amazon-cognito.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.114286" vertical-offset="1657" max-vertical-offset="10302">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1657" max-vertical-offset="10302">
               <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -77,9 +585,9 @@
         </entry>
       </file>
       <file leaf-file-name="site.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/site.css">
+        <entry file="file://$PROJECT_DIR$/css/site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1700">
               <caret line="1" column="27" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="27" />
               <folding />
             </state>
@@ -87,7 +595,7 @@
         </entry>
       </file>
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/index.css">
+        <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2057">
               <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
@@ -97,9 +605,9 @@
         </entry>
       </file>
       <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/bootstrap.min.css">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
               <caret line="6" column="34977" selection-start-line="6" selection-start-column="34977" selection-end-line="6" selection-end-column="34977" />
               <folding />
             </state>
@@ -107,6 +615,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -152,6 +663,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,81 +682,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AWS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Planner531" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,9 +692,15 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ronalds.breikss\Git\Planner531" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Planner531/www/index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Planner531/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -290,6 +735,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -302,6 +753,9 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a3c62dc2-e8cf-4c34-84d8-48792a471e10" name="Default" comment="" />
@@ -313,25 +767,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3402299" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33890748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25356576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33793104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -357,41 +811,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/css/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <caret line="6" column="34977" selection-start-line="6" selection-start-column="34977" selection-end-line="6" selection-end-column="34977" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="5814">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/spec.html">
+    <entry file="file://$PROJECT_DIR$/js/AngularLocalStorage/angular-local-storage.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="26.846153" vertical-offset="698" max-vertical-offset="1258">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3961">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/site.css">
+    <entry file="file://$PROJECT_DIR$/spec.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="698" max-vertical-offset="1258">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/index.css">
+    <entry file="file://$PROJECT_DIR$/js/Controllers/531Controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2057">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="14586">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/AWS/amazon-cognito.min.js">
+    <entry file="file://$PROJECT_DIR$/js/AWS/amazon-cognito.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.114286" vertical-offset="1657" max-vertical-offset="10302">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1657" max-vertical-offset="10302">
           <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -399,7 +853,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/AngularLocalStorage/angular-local-storage.min.js">
+    <entry file="file://$PROJECT_DIR$/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1700">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2057">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
+          <caret line="6" column="34977" selection-start-line="6" selection-start-column="34977" selection-end-line="6" selection-end-column="34977" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5814">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/AngularLocalStorage/angular-local-storage.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3961">
           <caret line="193" column="14" selection-start-line="193" selection-start-column="14" selection-end-line="193" selection-end-column="14" />
@@ -407,7 +893,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/Controllers/531Controller.js">
+    <entry file="file://$PROJECT_DIR$/spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="698" max-vertical-offset="1258">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Controllers/531Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="14586">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/AWS/amazon-cognito.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1657" max-vertical-offset="10302">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1700">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2057">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
+          <caret line="6" column="34977" selection-start-line="6" selection-start-column="34977" selection-end-line="6" selection-end-column="34977" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="34977" selection-start-line="6" selection-start-column="34977" selection-end-line="6" selection-end-column="34977" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="698" max-vertical-offset="1258">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2057">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/AWS/amazon-cognito.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1657" max-vertical-offset="10302">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Controllers/531Controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14586">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
@@ -415,10 +993,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/js/AngularLocalStorage/angular-local-storage.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61174244" vertical-offset="0" max-vertical-offset="5814">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3961">
+          <caret line="185" column="32" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76787955" vertical-offset="1547" max-vertical-offset="5814">
+          <caret line="127" column="38" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
           <folding />
         </state>
       </provider>
