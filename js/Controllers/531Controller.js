@@ -1,39 +1,40 @@
-﻿angular.module('fiveThreeOneModule', ['LocalStorageModule'])
-    .controller('fiveThreeOneController', [
-        '$scope',
+﻿angular.module('FiveThreeOneModule', ['LocalStorageModule'])
+    .controller('FiveThreeOneController', [
         'localStorageService',
-        function ($scope, localStorageService) {
-            $scope.removeOutdatedDataFromLocalStorage = function () {
-                var storedPlates = this.storedPlates();
+        function (localStorageService) {
+            var FiveThreeOneController = this;
+            
+            FiveThreeOneController.removeOutdatedDataFromLocalStorage = function () {
+                var storedPlates = FiveThreeOneController.storedPlates();
                 if (storedPlates != undefined
                     && storedPlates[0].measurementUnit == undefined)
                     localStorageService.remove('availablePlates');
-                var storedMainLifts = this.storedMainLifts();
+                var storedMainLifts = FiveThreeOneController.storedMainLifts();
                 if (storedMainLifts != undefined
-                    && this.accessoryWorkTemplatesHaveBeenChanged(storedMainLifts))
-                    this.fixAccessoryExcercisesInTheTemplate(storedMainLifts);
+                    && FiveThreeOneController.accessoryWorkTemplatesHaveBeenChanged(storedMainLifts))
+                    FiveThreeOneController.fixAccessoryExcercisesInTheTemplate(storedMainLifts);
             };
 
-            $scope.measurementUnits = [
+            FiveThreeOneController.measurementUnits = [
                 "kg",
                 "lbs"
             ];
 
-            $scope.selectedMeasurementUnit = "kg";
+            FiveThreeOneController.selectedMeasurementUnit = "kg";
 
-            $scope.fixAccessoryExcercisesInTheTemplate = function (storedMainLifts) {
+            FiveThreeOneController.fixAccessoryExcercisesInTheTemplate = function (storedMainLifts) {
                 for (var mainLiftIndex = 0; mainLiftIndex < storedMainLifts.length; mainLiftIndex++) {
-                    var mainLift = this.mainLifts[mainLiftIndex]
+                    var mainLift = FiveThreeOneController.mainLifts[mainLiftIndex]
                     var storedMainLift = storedMainLifts[mainLiftIndex];
                     storedMainLift.accessoryWorkPlanTemplates = mainLift.accessoryWorkPlanTemplates;
                 }
-                this.mainLifts = storedMainLifts;
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.mainLifts = storedMainLifts;
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.accessoryWorkTemplatesHaveBeenChanged = function (storedMainLifts) {
-                for (var mainLiftIndex = 0; mainLiftIndex < this.mainLifts.length; mainLiftIndex++) {
-                    var mainLift = this.mainLifts[mainLiftIndex];
+            FiveThreeOneController.accessoryWorkTemplatesHaveBeenChanged = function (storedMainLifts) {
+                for (var mainLiftIndex = 0; mainLiftIndex < FiveThreeOneController.mainLifts.length; mainLiftIndex++) {
+                    var mainLift = FiveThreeOneController.mainLifts[mainLiftIndex];
                     var storedMainLift = storedMainLifts[mainLiftIndex];
                     if (mainLift.accessoryWorkPlanTemplates.length != storedMainLift.accessoryWorkPlanTemplates.length)
                         return true;
@@ -49,71 +50,71 @@
                 return false;
             };
 
-            $scope.accessoryWorkPlanTemplates = [
+            FiveThreeOneController.accessoryWorkPlanTemplates = [
                 "Boring but big",
                 "The Triumvirate",
                 "I'm not doing Jack shit",
                 "Bodyweight"
             ];
 
-            $scope.storedSelectedMeasurementUnit = function () {
+            FiveThreeOneController.storedSelectedMeasurementUnit = function () {
                 var selectedMeasurementUnit = null;
                 if (localStorageService.isSupported)
                     selectedMeasurementUnit = localStorageService.get('selectedMeasurementUnit');
                 return selectedMeasurementUnit;
             };
 
-            $scope.storedMainLifts = function () {
+            FiveThreeOneController.storedMainLifts = function () {
                 var mainLifts = null;
                 if (localStorageService.isSupported)
                     mainLifts = localStorageService.get('mainLifts');
                 return mainLifts;
             };
 
-            $scope.storedPlates = function () {
+            FiveThreeOneController.storedPlates = function () {
                 var availablePlates = null;
                 if (localStorageService.isSupported)
                     availablePlates = localStorageService.get('availablePlates');
                 return availablePlates;
             };
 
-            $scope.storedSelectedAccessoryWorkTemplate = function () {
+            FiveThreeOneController.storedSelectedAccessoryWorkTemplate = function () {
                 var selectedAccessoryWorkTemplate = null;
                 if (localStorageService.isSupported)
                     selectedAccessoryWorkTemplate = localStorageService.get('selectedAccessoryWorkTemplate');
                 return selectedAccessoryWorkTemplate;
             };
 
-            $scope.saveDataToLocalStorage = function () {
+            FiveThreeOneController.saveDataToLocalStorage = function () {
                 if (localStorageService.isSupported) {
-                    localStorageService.add('mainLifts', this.mainLifts);
-                    localStorageService.add('availablePlates', this.availablePlates);
-                    localStorageService.add('selectedAccessoryWorkTemplate', this.selectedAccessoryWorkTemplate);
-                    localStorageService.add('selectedMeasurementUnit', this.selectedMeasurementUnit);
+                    localStorageService.add('mainLifts', FiveThreeOneController.mainLifts);
+                    localStorageService.add('availablePlates', FiveThreeOneController.availablePlates);
+                    localStorageService.add('selectedAccessoryWorkTemplate', FiveThreeOneController.selectedAccessoryWorkTemplate);
+                    localStorageService.add('selectedMeasurementUnit', FiveThreeOneController.selectedMeasurementUnit);
                 }
             };
 
-            $scope.loadFromStorage = function () {
-                this.removeOutdatedDataFromLocalStorage();
+            FiveThreeOneController.loadFromStorage = function () {
+                FiveThreeOneController.removeOutdatedDataFromLocalStorage();
 
-                var storedMainLifts = this.storedMainLifts();
+                var storedMainLifts = FiveThreeOneController.storedMainLifts();
                 if (storedMainLifts != undefined)
-                    this.mainLifts = storedMainLifts;
+                    FiveThreeOneController.mainLifts = storedMainLifts;
 
-                var storedPlates = this.storedPlates();
+                var storedPlates = FiveThreeOneController.storedPlates();
                 if (storedPlates != undefined)
-                    this.availablePlates = storedPlates;
+                    FiveThreeOneController.availablePlates = storedPlates;
 
-                var storedSelectedAccessoryWorkTemplate = this.storedSelectedAccessoryWorkTemplate();
+                var storedSelectedAccessoryWorkTemplate = FiveThreeOneController.storedSelectedAccessoryWorkTemplate();
                 if (storedSelectedAccessoryWorkTemplate != undefined)
-                    this.selectedAccessoryWorkTemplate = storedSelectedAccessoryWorkTemplate;
+                    FiveThreeOneController.selectedAccessoryWorkTemplate = storedSelectedAccessoryWorkTemplate;
 
-                var storedSelectedMeasurementUnit = this.storedSelectedMeasurementUnit();
+                var storedSelectedMeasurementUnit = FiveThreeOneController.storedSelectedMeasurementUnit();
                 if (storedSelectedMeasurementUnit != undefined)
-                    this.selectedMeasurementUnit = storedSelectedMeasurementUnit;
+                    FiveThreeOneController.selectedMeasurementUnit = storedSelectedMeasurementUnit;
             };
 
-            $scope.mainLifts = [
+            FiveThreeOneController.mainLifts = [
                 {
                     name: 'Military press',
                     shouldEstimateOneRepMax: false,
@@ -360,13 +361,13 @@
                 }
             ];
 
-            $scope.selectedAccessoryWorkTemplate = "I'm not doing Jack shit";
+            FiveThreeOneController.selectedAccessoryWorkTemplate = "I'm not doing Jack shit";
 
-            $scope.loadAccessoryWorkTemplate = function () {
-                for (var mainLiftIndex = 0; mainLiftIndex < this.mainLifts.length; mainLiftIndex++) {
-                    var mainLift = this.mainLifts[mainLiftIndex];
+            FiveThreeOneController.loadAccessoryWorkTemplate = function () {
+                for (var mainLiftIndex = 0; mainLiftIndex < FiveThreeOneController.mainLifts.length; mainLiftIndex++) {
+                    var mainLift = FiveThreeOneController.mainLifts[mainLiftIndex];
                     mainLift.accessoryWorkExcercises = new Array();
-                    var template = this.getAccessoryWorkTemplate(mainLift, this.selectedAccessoryWorkTemplate);
+                    var template = FiveThreeOneController.getAccessoryWorkTemplate(mainLift, FiveThreeOneController.selectedAccessoryWorkTemplate);
                     if (template.excercises != undefined)
                         for (var accessoryExcerciseIndex = 0; accessoryExcerciseIndex < template.excercises.length; accessoryExcerciseIndex++) {
                             var excercise = template.excercises[accessoryExcerciseIndex];
@@ -378,44 +379,44 @@
                             mainLift.accessoryWorkExcercises.push(excerciseCopy);
                         }
                 }
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.getAccessoryWorkTemplate = function (mainLift, selectedAccessoryWorkTemplate) {
+            FiveThreeOneController.getAccessoryWorkTemplate = function (mainLift, selectedAccessoryWorkTemplate) {
                 var correspondingTemplates = $.grep(mainLift.accessoryWorkPlanTemplates, function (item) {
                     return item.name == selectedAccessoryWorkTemplate;
                 });
                 return correspondingTemplates[0];
             };
 
-            $scope.addAccessoryWorkExcercise = function (mainLift) {
+            FiveThreeOneController.addAccessoryWorkExcercise = function (mainLift) {
                 mainLift.accessoryWorkExcercises.push({
                     id: identifierGenerator.newIdentifier(),
                     name: null,
                     sets: null,
                     reps: null
                 });
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.removeAccessoryWorkExcercise = function (mainLift, accessoryWorkExcercise) {
+            FiveThreeOneController.removeAccessoryWorkExcercise = function (mainLift, accessoryWorkExcercise) {
                 var accessoryWorkExcercisesToRemove = $.grep(mainLift.accessoryWorkExcercises, function (item) {
                     return item.id == accessoryWorkExcercise.id;
                 });
 
                 mainLift.accessoryWorkExcercises.splice(
                     mainLift.accessoryWorkExcercises.indexOf(accessoryWorkExcercisesToRemove[0]), 1);
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.getAvailablePlates = function () {
-                var availablePlates = $.grep(this.availablePlates, function (item) {
-                    return item.measurementUnit == $scope.selectedMeasurementUnit;
+            FiveThreeOneController.getAvailablePlates = function () {
+                var availablePlates = $.grep(FiveThreeOneController.availablePlates, function (item) {
+                    return item.measurementUnit == FiveThreeOneController.selectedMeasurementUnit;
                 });
                 return availablePlates;
             };
 
-            $scope.availablePlates = [
+            FiveThreeOneController.availablePlates = [
                 {
                     weight: 50,
                     measurementUnit: "kg",
@@ -503,8 +504,8 @@
                 }
             ];
 
-            $scope.atLeastOnePlateCanBeUsedForCalculations = function () {
-                var platesUsedForCalculations = $.grep(this.getAvailablePlates(), function (item) {
+            FiveThreeOneController.atLeastOnePlateCanBeUsedForCalculations = function () {
+                var platesUsedForCalculations = $.grep(FiveThreeOneController.getAvailablePlates(), function (item) {
                     return item.usedForCalculations;
                 });
 
@@ -512,33 +513,33 @@
                     && platesUsedForCalculations.length > 0;
             };
 
-            $scope.addPlateToCalculation = function (availablePlate) {
+            FiveThreeOneController.addPlateToCalculation = function (availablePlate) {
                 availablePlate.usedForCalculations = true;
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.removePlateFromCalculation = function (availablePlate) {
+            FiveThreeOneController.removePlateFromCalculation = function (availablePlate) {
                 availablePlate.usedForCalculations = false;
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.barbellWeight = {
+            FiveThreeOneController.barbellWeight = {
                 inKg: 20,
                 inLbs: 45,
             };
 
-            $scope.getBarbellWeight = function () {
+            FiveThreeOneController.getBarbellWeight = function () {
                 var weight = 0;
-                if (this.selectedMeasurementUnit == "kg")
-                    weight = this.barbellWeight.inKg;
-                else if (this.selectedMeasurementUnit == "lbs")
-                    weight = this.barbellWeight.inLbs;
+                if (FiveThreeOneController.selectedMeasurementUnit == "kg")
+                    weight = FiveThreeOneController.barbellWeight.inKg;
+                else if (FiveThreeOneController.selectedMeasurementUnit == "lbs")
+                    weight = FiveThreeOneController.barbellWeight.inLbs;
                 return weight;
             };
 
-            $scope.calculated = false;
+            FiveThreeOneController.calculated = false;
 
-            $scope.mainLiftCycles = [
+            FiveThreeOneController.mainLiftCycles = [
                 [
                     {
                         reps: 5,
@@ -609,69 +610,69 @@
                 ]
             ];
 
-            $scope.calculateEstimatedOneRepMax = function (mainLift) {
+            FiveThreeOneController.calculateEstimatedOneRepMax = function (mainLift) {
                 var oneRepMax = 0;
                 if (mainLift.maxReps != undefined
                     && mainLift.maxWeight != undefined) {
                     oneRepMax = parseFloat(mainLift.maxReps * mainLift.maxWeight * 0.0333 + mainLift.maxWeight).toFixed(1);
                 }
                 mainLift.oneRepMax = oneRepMax;
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.calculateNinetyPercentOfOneRepMax = function (mainLift) {
+            FiveThreeOneController.calculateNinetyPercentOfOneRepMax = function (mainLift) {
                 mainLift.ninetyPercentOfOneRepMax = 0;
                 if (mainLift.oneRepMax != undefined)
                     mainLift.ninetyPercentOfOneRepMax = parseFloat(mainLift.oneRepMax * 0.9).toFixed(1);
                 return mainLift.ninetyPercentOfOneRepMax;
             };
 
-            $scope.estimateOneRepMax = function (mainLift) {
+            FiveThreeOneController.estimateOneRepMax = function (mainLift) {
                 mainLift.shouldEstimateOneRepMax = true;
                 mainLift.oneRepMax = null;
                 mainLift.ninetyPercentOfOneRepMax = null;
-                this.calculateEstimatedOneRepMax(mainLift);
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.calculateEstimatedOneRepMax(mainLift);
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.enterOneRepMax = function (mainLift) {
+            FiveThreeOneController.enterOneRepMax = function (mainLift) {
                 mainLift.shouldEstimateOneRepMax = false;
                 mainLift.oneRepMax = null;
                 mainLift.ninetyPercentOfOneRepMax = null;
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.isFormValid = function () { //Conditional validation does not seem to work- all validators are valid but the form itself is not :(. This is a workaround.
-                return this.areAllMainLiftsValid()
-                    && this.atLeastOnePlateCanBeUsedForCalculations();
+            FiveThreeOneController.isFormValid = function () { //Conditional validation does not seem to work- all validators are valid but the form itself is not :(. This is a workaround.
+                return FiveThreeOneController.areAllMainLiftsValid()
+                    && FiveThreeOneController.atLeastOnePlateCanBeUsedForCalculations();
             };
 
-            $scope.areAllMainLiftsValid = function () {
-                var invalidLifts = $.grep(this.mainLifts, function (item) {
+            FiveThreeOneController.areAllMainLiftsValid = function () {
+                var invalidLifts = $.grep(FiveThreeOneController.mainLifts, function (item) {
                     return item.ninetyPercentOfOneRepMax == null
                         || (item.ninetyPercentOfOneRepMax != null && item.ninetyPercentOfOneRepMax <= 0);
                 });
                 return invalidLifts.length == 0;
             };
 
-            $scope.recalculateMesocycle = function () {
-                this.calculated = false;
-                this.clearMainLifts();
+            FiveThreeOneController.recalculateMesocycle = function () {
+                FiveThreeOneController.calculated = false;
+                FiveThreeOneController.clearMainLifts();
             };
 
-            $scope.clearMainLifts = function () {
-                for (var mainLiftIndex = 0; mainLiftIndex < this.mainLifts.length; mainLiftIndex++) {
-                    var mainLift = this.mainLifts[mainLiftIndex];
+            FiveThreeOneController.clearMainLifts = function () {
+                for (var mainLiftIndex = 0; mainLiftIndex < FiveThreeOneController.mainLifts.length; mainLiftIndex++) {
+                    var mainLift = FiveThreeOneController.mainLifts[mainLiftIndex];
                     mainLift.cycleWeights = new Array();
                 }
             };
 
-            $scope.calculateMesocycle = function () {
-                this.clearMainLifts();
-                for (var mainLiftIndex = 0; mainLiftIndex < this.mainLifts.length; mainLiftIndex++) {
-                    for (var mainLiftCycleIndex = 0; mainLiftCycleIndex < this.mainLiftCycles.length; mainLiftCycleIndex++) {
-                        var mainLiftCycle = this.mainLiftCycles[mainLiftCycleIndex];
-                        var mainLift = this.mainLifts[mainLiftIndex];
+            FiveThreeOneController.calculateMesocycle = function () {
+                FiveThreeOneController.clearMainLifts();
+                for (var mainLiftIndex = 0; mainLiftIndex < FiveThreeOneController.mainLifts.length; mainLiftIndex++) {
+                    for (var mainLiftCycleIndex = 0; mainLiftCycleIndex < FiveThreeOneController.mainLiftCycles.length; mainLiftCycleIndex++) {
+                        var mainLiftCycle = FiveThreeOneController.mainLiftCycles[mainLiftCycleIndex];
+                        var mainLift = FiveThreeOneController.mainLifts[mainLiftIndex];
                         var cycle = mainLiftCycleIndex + 1;
                         var cycleWeights = {
                             cycle: cycle,
@@ -685,18 +686,18 @@
                                 reps: set.reps,
                                 percentages: set.percentages,
                                 canDoMoreReps: set.canDoMoreReps,
-                                weight: this.calculateWeight(mainLift, set)
+                                weight: FiveThreeOneController.calculateWeight(mainLift, set)
                             };
                             cycleWeights.setWeights.push(setWeight);
                         }
                         mainLift.cycleWeights.push(cycleWeights);
                     }
                 }
-                this.calculated = true;
-                this.saveDataToLocalStorage();
+                FiveThreeOneController.calculated = true;
+                FiveThreeOneController.saveDataToLocalStorage();
             };
 
-            $scope.calculateWeight = function (mainLift, set) {
+            FiveThreeOneController.calculateWeight = function (mainLift, set) {
                 var weight = {
                     rawWeight: Number((mainLift.ninetyPercentOfOneRepMax / 100 * set.percentages).toFixed(1)),
                     weightToUse: 0,
@@ -704,20 +705,20 @@
                     platesToUse: new Array()
                 };
 
-                var barbellWeight = this.getBarbellWeight();
+                var barbellWeight = FiveThreeOneController.getBarbellWeight();
                 if (weight.rawWeight > barbellWeight)
                     weight.weightToUse = barbellWeight;
 
                 var rawWeightWithoutBarbell = weight.rawWeight - barbellWeight;
 
-                var availablePlates = this.getAvailablePlates();
+                var availablePlates = FiveThreeOneController.getAvailablePlates();
                 for (var availablePlateIndex = 0; availablePlateIndex < availablePlates.length; availablePlateIndex++) {
                     var availablePlate = availablePlates[availablePlateIndex];
                     if (availablePlate.usedForCalculations) {
                         var weightOnBothSides = 2 * availablePlate.weight;
                         do {
                             if (rawWeightWithoutBarbell - weightOnBothSides >= 0) {
-                                var alreadyAddedPlate = this.getAlreadyAddedPlate(weight, availablePlate);
+                                var alreadyAddedPlate = FiveThreeOneController.getAlreadyAddedPlate(weight, availablePlate);
 
                                 if (alreadyAddedPlate != undefined) {
                                     alreadyAddedPlate.plateCount += 2;
@@ -737,7 +738,7 @@
                 return weight;
             };
 
-            $scope.getAlreadyAddedPlate = function (weight, availablePlate) {
+            FiveThreeOneController.getAlreadyAddedPlate = function (weight, availablePlate) {
                 var alreadyAddedPlate = null;
                 var alreadyAddedPlates = $.grep(weight.platesToUse, function (item) {
                     return item.plateWeight == availablePlate.weight;
@@ -747,26 +748,26 @@
                 return alreadyAddedPlate;
             };
 
-            $scope.printableVersion = false;
-            $scope.mesocycleName = '';
+            FiveThreeOneController.printableVersion = false;
+            FiveThreeOneController.mesocycleName = '';
 
-            $scope.enablePrintableVersion = function () {
-                this.printableVersion = true;
+            FiveThreeOneController.enablePrintableVersion = function () {
+                FiveThreeOneController.printableVersion = true;
             };
 
-            $scope.disablePrintableVersion = function () {
-                this.printableVersion = false;
+            FiveThreeOneController.disablePrintableVersion = function () {
+                FiveThreeOneController.printableVersion = false;
             };
 
-            $scope.printPage = function () {
+            FiveThreeOneController.printPage = function () {
                 window.print();
                 //window.location.href = window.location.href; //workaround to call print dialog
             };
 
-            $scope.historyRecords = {};
+            FiveThreeOneController.historyRecords = {};
 
-            $scope.showHistory = function () {
-                if (angular.equals({}, $scope.historyRecords)) {
+            FiveThreeOneController.showHistory = function () {
+                if (angular.equals({}, FiveThreeOneController.historyRecords)) {
                     AWS.config.credentials.get(function (err) {
                         if (err) {
                             alert("Error: " + err);
@@ -780,7 +781,7 @@
                                 angular.forEach(records, function (value, key) {
                                     records[key] = angular.fromJson(records[key]);
                                 });
-                                //$scope.historyRecords = records;
+                                //FiveThreeOneController.historyRecords = records;
                                 window.foo = records;
                             })
                         });
@@ -789,9 +790,9 @@
             };
 
 
-            $scope.sync = function () {
-                if ($scope.mesocycleName == '') {
-                    $scope.mesocycleName = new Date().yyyymmdd();
+            FiveThreeOneController.sync = function () {
+                if (FiveThreeOneController.mesocycleName == '') {
+                    FiveThreeOneController.mesocycleName = new Date().yyyymmdd();
                 }
                 AWS.config.credentials.get(function (err) {
                     if (err) {
@@ -805,13 +806,13 @@
 
                     syncClient.openOrCreateDataset('Mesocycles', function (err, dataset) {
                         var syncData = angular.toJson({
-                            mainLifts: $scope.mainLifts,
-                            availablePlates: $scope.availablePlates,
-                            selectedAccessoryWorkTemplate: $scope.selectedAccessoryWorkTemplate,
-                            selectedMeasurementUnit: $scope.selectedMeasurementUnit
+                            mainLifts: FiveThreeOneController.mainLifts,
+                            availablePlates: FiveThreeOneController.availablePlates,
+                            selectedAccessoryWorkTemplate: FiveThreeOneController.selectedAccessoryWorkTemplate,
+                            selectedMeasurementUnit: FiveThreeOneController.selectedMeasurementUnit
                         });
 
-                        dataset.put($scope.mesocycleName, syncData, function (err, record) {
+                        dataset.put(FiveThreeOneController.mesocycleName, syncData, function (err, record) {
 
                         });
 
