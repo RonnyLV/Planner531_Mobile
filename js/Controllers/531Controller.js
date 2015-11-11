@@ -780,8 +780,8 @@
                                 angular.forEach(records, function (value, key) {
                                     records[key] = angular.fromJson(records[key]);
                                 });
-                                $scope.historyRecords = records;
-                                window.foo = $scope.historyRecords;
+                                //$scope.historyRecords = records;
+                                window.foo = records;
                             })
                         });
                     });

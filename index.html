@@ -331,7 +331,7 @@
             'theme': 'dark',
             'onsuccess': function (googleUser) {
                 console.log('Google+ Login Successful');
-                window.localStorage.setItem('GoogleUser', googleUser.B.id_token);
+                window.localStorage.setItem('GoogleUser', googleUser.getId());
                 setSocialCreds();
             },
             'onfailure': function (error) {
