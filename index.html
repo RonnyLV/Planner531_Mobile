@@ -82,7 +82,7 @@
     <button type="button" class="btn btn-default" onclick="gapi.signin2.signOut()">Logout Google+</button>
 </div>
 <div>
-    <div ng-controller="FiveThreeOneController as planner" ng-init="loadFromStorage()" ng-csp>
+    <div ng-controller="FiveThreeOneController as planner" ng-init="planner.loadFromStorage()" ng-csp>
         <form name="calculationForm">
             <div ng-hide="planner.calculated">
                 <div class="col-lg-12">
@@ -91,7 +91,7 @@
 
                         <div class="form-control">
                             <p ng-repeat="measurementUnit in planner.measurementUnits">
-                                <input type="radio" ng-model="$parent.selectedMeasurementUnit"
+                                <input type="radio" ng-model="planner.selectedMeasurementUnit"
                                        value="{{measurementUnit}}" ng-change="planner.saveDataToLocalStorage()">
                                 {{measurementUnit}} </p>
                         </div>
@@ -271,12 +271,12 @@
 
                             <div class="set" ng-repeat="setWeight in cycleWeight.setWeights">
                                 <span class="label label-success">Set {{setWeight.set}}</span>
-                                <span class="label label-danger">{{setWeight.weight.weightToUse}} {{selectedMeasurementUnit}}</span>
+                                <span class="label label-danger">{{setWeight.weight.weightToUse}} {{planner.selectedMeasurementUnit}}</span>
                                 x
                                 <span class="label label-danger">{{setWeight.reps}} <span
                                         ng-show="setWeight.canDoMoreReps">+</span> reps</span>
 
-                                <span class="label label-info">Calculated weight - {{setWeight.weight.rawWeight}} {{selectedMeasurementUnit}}</span>
+                                <span class="label label-info">Calculated weight - {{setWeight.weight.rawWeight}} {{planner.selectedMeasurementUnit}}</span>
                                 <span class="label label-warning">{{setWeight.percentages}} % from 90% of 1RM </span>
 
                                 <div class="plates">
@@ -285,7 +285,7 @@
                                     <div ng-repeat="plateToUse in setWeight.weight.platesToUse">
                                         <span class="plateCount">{{plateToUse.plateCount}}</span>
                                         x <span
-                                            class="badge">{{plateToUse.plateWeight}} {{selectedMeasurementUnit}}</span>
+                                            class="badge">{{plateToUse.plateWeight}} {{planner.selectedMeasurementUnit}}</span>
                                     </div>
                                 </div>
                             </div>

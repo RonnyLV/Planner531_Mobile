@@ -525,7 +525,7 @@
 
             FiveThreeOneController.barbellWeight = {
                 inKg: 20,
-                inLbs: 45,
+                inLbs: 45
             };
 
             FiveThreeOneController.getBarbellWeight = function () {
