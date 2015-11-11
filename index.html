@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width"/>
     <meta name="google-signin-client_id"
-          content="736837199904-g95jg3j6fr3c1h9s22c3hatg5th3u850.apps.googleusercontent.com">
+          content="574997752873-ph1q4ilbcijoilr8a3c4d7idau4rh95k.apps.googleusercontent.com">
     <title>5/3/1 planner</title>
     <link rel="stylesheet" href="css/site.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -84,6 +84,8 @@
 <div>
     <div class="fb-login-button" onlogin="FB.getAccessToken();"></div>
     <div id="my-signin2"></div>
+    <button type="button" class="btn btn-default" onclick="FB.signOut()">Logout FB</button>
+    <button type="button" class="btn btn-default" onclick="gapi.signin2.signOut()">Logout Google+</button>
 </div>
 <div>
     <div ng-app="fiveThreeOneModule" ng-controller="fiveThreeOneController" ng-init="loadFromStorage()" ng-csp>
@@ -318,9 +320,9 @@
         </div>
     </div>
 </div>
-<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+<script src="https://apis.google.com/js/platform.js?onload=prepareGAPI" async defer></script>
 <script>
-    function renderButton() {
+    function prepareGAPI() {
         gapi.signin2.render('my-signin2', {
             'scope': 'https://www.googleapis.com/auth/plus.login',
             'width': 200,
@@ -335,6 +337,13 @@
                 console.log(error);
             }
         });
+        gapi.signin2.signOut = function () {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                window.localStorage.setItem('GoogleUser', '');
+                setSocialCreds();
+            });
+        };
     }
 </script>
 <script>
@@ -345,12 +354,6 @@
             xfbml: true,
             version: 'v2.3'
         });
-        gapi.signin2.signOut = function () {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-                window.localStorage.setItem('GoogleUser', '');
-            });
-        };
         FB.getAccessToken = function () {
             FB.getLoginStatus(function (response) {
                 if (response.status === 'connected') {
@@ -361,6 +364,7 @@
         };
         FB.signOut = function () {
             window.localStorage.setItem('FacebookUser', '');
+            setSocialCreds();
         };
     });
 
