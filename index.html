@@ -34,12 +34,12 @@
                 logins['accounts.google.com'] = getAccessToken('Google');
             }
 
+            AWS.config.region = 'eu-west-1';
+
             AWS.config.credentials = new AWS.CognitoIdentityCredentials({
                 IdentityPoolId: 'eu-west-1:db9c449a-4ff1-41d5-aa4e-bcfabbeb237c',
                 Logins: logins
             });
-
-            AWS.config.region = 'eu-west-1';
         }
         Date.prototype.yyyymmdd = function () {
             var yyyy = this.getFullYear().toString();
@@ -331,7 +331,7 @@
             'theme': 'dark',
             'onsuccess': function (googleUser) {
                 console.log('Google+ Login Successful');
-                window.localStorage.setItem('GoogleUser', googleUser.getId());
+                window.localStorage.setItem('GoogleUser', googleUser.getAuthResponse.id_token);
                 setSocialCreds();
             },
             'onfailure': function (error) {
