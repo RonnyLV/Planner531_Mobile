@@ -1,7 +1,11 @@
-﻿angular.module('FiveThreeOneModule', ['LocalStorageModule'])
-    .controller('FiveThreeOneController', [
+﻿(function () {
+
+    var app = angular.module('fiveThreeOne-planner', ['LocalStorageModule']);
+
+    app.controller('plannerController', [
         'localStorageService',
-        function (localStorageService) {
+        'plannerService',
+        function (localStorageService, plannerService) {
             var FiveThreeOneController = this;
             
             FiveThreeOneController.removeOutdatedDataFromLocalStorage = function () {
@@ -830,3 +834,5 @@
             }
         }
     ]);
+
+})();
