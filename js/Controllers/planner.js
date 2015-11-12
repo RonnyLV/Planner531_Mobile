@@ -30,7 +30,7 @@
 
                 selectedAccessoryWorkTemplate: "I'm not doing Jack shit",
 
-                historyRecords: {},
+                historyRecords: {1:{}},
 
                 accessoryWorkPlanTemplates: [
                     "Boring but big",
