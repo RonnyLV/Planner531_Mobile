@@ -621,13 +621,13 @@
                             var modalInstance = $uibModal.open({
                                 animation: true,
                                 templateUrl: 'templates/historyRecords.html',
-                                //controller: 'historyController as history',
-                                size: 'lg'
-                                /*resolve: {
-                                    items: function () {
-                                        return $scope.items;
+                                controller: 'historyController as history',
+                                size: 'lg',
+                                resolve: {
+                                    historyRecords: function () {
+                                        return plannerController.historyRecords;
                                     }
-                                }*/
+                                }
                             });
 
                         });
@@ -689,16 +689,6 @@
                     });
 
                 });
-            };
-
-            plannerController.getMainLiftByName = function (name, mainLifts) {
-                var result = -1;
-                angular.forEach(mainLifts, function (value, key) {
-                    if (value.name == name) {
-                        result = key;
-                    }
-                });
-                return plannerController.mainLifts[result];
             };
 
             plannerService.loadFromStorage(
