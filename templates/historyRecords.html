@@ -1,52 +1,46 @@
-<div class="modal fade" id="historyModal" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="historyModalLabel">History</h4>
-            </div>
-            <div class="modal-body">
-                <table id="historyRecords">
-                    <thead>
-                    <tr>
-                        <th>Mesocycle Name</th>
-                        <th ng-repeat="mainLift in planner.mainLifts">
-                            {{mainLift.name}}
-                        </th>
-                        <th>Accessories</th>
-                        <th>Creation Date</th>
-                        <th>Last Update date</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr ng-repeat="record in planner.historyRecords">
-                        <td>{{record.mesocycleName}}</td>
-                        <td ng-repeat="mainLift in planner.mainLifts">
-                            {{planner.getMainLiftByName(mainLift.name, record.mainLifts).oneRepMax}}
-                        </td>
-                        <td>
-                            <ul>
-                                <li ng-repeat="mainLift in record.mainLifts">
-                                    {{mainLift.name}}
-                                    <ul>
-                                        <li ng-repeat="accessoryWorkExcercises in mainLift.accessoryWorkExcercises">
-                                            {{accessoryWorkExcercises.name}} X {{accessoryWorkExcercises.sets}}
-                                            sets X {{accessoryWorkExcercises.reps}} reps
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>{{record.creationDate.toUTCString()}}</td>
-                        <td>{{record.lastUpdateDate.toUTCString()}}</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+    </button>
+    <h4 class="modal-title" id="historyModalLabel">History</h4>
+</div>
+<div class="modal-body">
+    <table id="historyRecords">
+        <thead>
+        <tr>
+            <th>Mesocycle Name</th>
+            <th ng-repeat="mainLift in planner.mainLifts">
+                {{mainLift.name}}
+            </th>
+            <th>Accessories</th>
+            <th>Creation Date</th>
+            <th>Last Update date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="record in planner.historyRecords">
+            <td>{{record.mesocycleName}}</td>
+            <td ng-repeat="mainLift in planner.mainLifts">
+                {{planner.getMainLiftByName(mainLift.name, record.mainLifts).oneRepMax}}
+            </td>
+            <td>
+                <ul>
+                    <li ng-repeat="mainLift in record.mainLifts">
+                        {{mainLift.name}}
+                        <ul>
+                            <li ng-repeat="accessoryWorkExcercises in mainLift.accessoryWorkExcercises">
+                                {{accessoryWorkExcercises.name}} X {{accessoryWorkExcercises.sets}}
+                                sets X {{accessoryWorkExcercises.reps}} reps
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td>{{record.creationDate.toUTCString()}}</td>
+            <td>{{record.lastUpdateDate.toUTCString()}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
