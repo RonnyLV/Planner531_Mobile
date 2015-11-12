@@ -615,6 +615,7 @@
                             });
 
                             angular.copy(result, plannerController.historyRecords);
+                            $('#myModal').modal('show');
                         })
                     });
                 });
