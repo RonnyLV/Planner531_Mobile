@@ -665,7 +665,7 @@
                         dataset.getAll(function (err, records) {
                             angular.forEach(records, function (value, key) {
                                 records[key] = angular.fromJson(records[key]);
-                                if (records.mesocycleName == plannerController.mesocycleName) {
+                                if (records[key].mesocycleName == plannerController.mesocycleName) {
                                     mesocycleId = key;
                                     syncData.creationDate = records[key].creationDate;
                                 }
