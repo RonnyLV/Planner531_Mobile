@@ -30,7 +30,7 @@
 
                 selectedAccessoryWorkTemplate: "I'm not doing Jack shit",
 
-                historyRecords: {1:{}},
+                historyRecords: {},
 
                 accessoryWorkPlanTemplates: [
                     "Boring but big",
@@ -615,7 +615,8 @@
                             });
 
                             angular.copy(result, plannerController.historyRecords);
-                            $('#myModal').modal('show');
+
+                            $('#historyModal').modal('show');
                         })
                     });
                 });
