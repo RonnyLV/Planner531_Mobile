@@ -611,8 +611,8 @@
                         dataset.getAll(function (err, records) {
                             angular.forEach(records, function (value, key) {
                                 result[key] = angular.fromJson(records[key]);
-                                result[key].creationDate = new Date(records[key].creationDate);
-                                result[key].lastUpdateDate = new Date(records[key].lastUpdateDate);
+                                result[key].creationDate = new Date(result[key].creationDate);
+                                result[key].lastUpdateDate = new Date(result[key].lastUpdateDate);
                             });
 
                             angular.copy(result, plannerController.historyRecords);
