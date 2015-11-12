@@ -620,8 +620,15 @@
                                 angular.copy(result, plannerController.historyRecords);
                             }
 
-                            $('#historyModal').modal('show');
-                        })
+                        });
+                        dataset.synchronize({
+
+                            onSuccess: function (data, newRecords) {
+                                console.log('is success');
+                                $('#historyModal').modal('show');
+                            }
+
+                        });
                     });
                 });
             };

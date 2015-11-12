@@ -70,8 +70,8 @@
       <file leaf-file-name="planner.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Controllers/planner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93503934" vertical-offset="10864" max-vertical-offset="12053">
-              <caret line="667" column="73" selection-start-line="667" selection-start-column="73" selection-end-line="667" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.8467742" vertical-offset="10239" max-vertical-offset="12172">
+              <caret line="627" column="65" selection-start-line="627" selection-start-column="65" selection-end-line="627" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -841,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Controllers/planner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93503934" vertical-offset="10864" max-vertical-offset="12053">
-          <caret line="667" column="73" selection-start-line="667" selection-start-column="73" selection-end-line="667" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.8467742" vertical-offset="10239" max-vertical-offset="12172">
+          <caret line="627" column="65" selection-start-line="627" selection-start-column="65" selection-end-line="627" selection-end-column="65" />
           <folding />
         </state>
       </provider>
