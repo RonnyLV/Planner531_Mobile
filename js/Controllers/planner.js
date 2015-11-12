@@ -597,28 +597,27 @@
             };
 
             plannerController.loadHistory = function () {
-                if (angular.equals({}, plannerController.historyRecords)) {
-                    AWS.config.credentials.get(function (err) {
-                        if (err) {
-                            alert("Error: " + err);
-                            return;
-                        }
+                AWS.config.credentials.get(function (err) {
+                    if (err) {
+                        alert("Error: " + err);
+                        return;
+                    }
 
-                        var syncClient = new AWS.CognitoSyncManager();
+                    var syncClient = new AWS.CognitoSyncManager();
+                    var result = {};
 
-                        syncClient.openOrCreateDataset('Mesocycles', function (err, dataset) {
-                            dataset.getAll(function (err, records) {
-                                angular.forEach(records, function (value, key) {
-                                    records[key] = angular.fromJson(records[key]);
-                                    records[key].creationDate = new Date(records[key].creationDate);
-                                    records[key].lastUpdateDate = new Date(records[key].lastUpdateDate);
-                                });
+                    syncClient.openOrCreateDataset('Mesocycles', function (err, dataset) {
+                        dataset.getAll(function (err, records) {
+                            angular.forEach(records, function (value, key) {
+                                result[key] = angular.fromJson(records[key]);
+                                result[key].creationDate = new Date(records[key].creationDate);
+                                result[key].lastUpdateDate = new Date(records[key].lastUpdateDate);
+                            });
 
-                                angular.copy(records, plannerController.historyRecords);
-                            })
-                        });
+                            angular.copy(result, plannerController.historyRecords);
+                        })
                     });
-                }
+                });
             };
 
 
@@ -680,7 +679,7 @@
             plannerController.getMainLiftByName = function (name, mainLifts) {
                 var result = -1;
                 angular.forEach(mainLifts, function (value, key) {
-                    if(value.name == name){
+                    if (value.name == name) {
                         result = key;
                     }
                 });
