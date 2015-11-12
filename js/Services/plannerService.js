@@ -96,11 +96,11 @@
 
                             var storedSelectedAccessoryWorkTemplate = plannerService.storedSelectedAccessoryWorkTemplate();
                             if (storedSelectedAccessoryWorkTemplate != undefined && storedSelectedAccessoryWorkTemplate !== selectedAccessoryWorkTemplate)
-                                angular.copy(storedSelectedAccessoryWorkTemplate, selectedAccessoryWorkTemplate);
+                                selectedAccessoryWorkTemplate = storedSelectedAccessoryWorkTemplate;
 
                             var storedSelectedMeasurementUnit = plannerService.storedSelectedMeasurementUnit();
                             if (storedSelectedMeasurementUnit != undefined && storedSelectedMeasurementUnit !== selectedMeasurementUnit)
-                                angular.copy(storedSelectedMeasurementUnit, selectedMeasurementUnit);
+                                selectedMeasurementUnit = storedSelectedMeasurementUnit;
                         },
 
                         calculateWeight: function (mainLift, set, availablePlates, barbellWeight) {

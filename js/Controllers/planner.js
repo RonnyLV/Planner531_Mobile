@@ -1,11 +1,12 @@
 ﻿(function () {
 
-    var app = angular.module('fiveThreeOne-planner', ['LocalStorageModule']);
+    var app = angular.module('fiveThreeOne-planner', ['LocalStorageModule', 'uuid4']);
 
     app.controller('plannerController', [
         'localStorageService',
+        'uuid4',
         'fiveThreeOne-plannerService',
-        function (localStorageService, plannerService) {
+        function (localStorageService, uuid4, plannerService) {
             var plannerController = this;
 
             angular.extend(plannerController, {
@@ -609,9 +610,11 @@
                             dataset.getAll(function (err, records) {
                                 angular.forEach(records, function (value, key) {
                                     records[key] = angular.fromJson(records[key]);
+                                    records[key].creationDate = new Date(records[key].creationDate);
+                                    records[key].lastUpdateDate = new Date(records[key].lastUpdateDate);
                                 });
-                                //plannerController.historyRecords = records;
-                                window.foo = records;
+
+                                angular.copy(records, plannerController.historyRecords);
                             })
                         });
                     });
@@ -634,14 +637,30 @@
                     var syncClient = new AWS.CognitoSyncManager();
 
                     syncClient.openOrCreateDataset('Mesocycles', function (err, dataset) {
+                        var currentTime = new Date().getTime();
                         var syncData = angular.toJson({
+                            mesocycleName: plannerController.mesocycleName,
                             mainLifts: plannerController.mainLifts,
                             availablePlates: plannerController.availablePlates,
                             selectedAccessoryWorkTemplate: plannerController.selectedAccessoryWorkTemplate,
-                            selectedMeasurementUnit: plannerController.selectedMeasurementUnit
+                            selectedMeasurementUnit: plannerController.selectedMeasurementUnit,
+                            creationDate: currentTime,
+                            lastUpdateDate: currentTime
                         });
 
-                        dataset.put(plannerController.mesocycleName, syncData, function (err, record) {
+                        var mesocycleId = uuid4.generate();
+
+                        dataset.getAll(function (err, records) {
+                            angular.forEach(records, function (value, key) {
+                                records[key] = angular.fromJson(records[key]);
+                                if (records.mesocycleName == plannerController.mesocycleName) {
+                                    mesocycleId = key;
+                                    syncData.creationDate = records[key].creationDate;
+                                }
+                            });
+                        });
+
+                        dataset.put(mesocycleId, syncData, function (err, record) {
 
                         });
 
@@ -656,6 +675,16 @@
                     });
 
                 });
+            };
+
+            plannerController.getMainLiftByName = function (name, mainLifts) {
+                var result = -1;
+                angular.forEach(mainLifts, function (value, key) {
+                    if(value.name == name){
+                        result = key;
+                    }
+                });
+                return plannerController.mainLifts[result];
             };
 
             plannerService.loadFromStorage(

@@ -11,7 +11,8 @@
     <script src="js/AWS/aws-sdk.min.js"></script>
     <script src="js/AWS/amazon-cognito.min.js"></script>
     <script src="js/Angular/angular.js"></script>
-    <script src="js/AngularLocalStorage/angular-local-storage.min.js"></script>
+    <script src="js/Angular/services/angular-local-storage.min.js"></script>
+    <script src="js/Angular/services/angular-uuid4.min.js"></script>
     <script src="js/JQuery/jquery-2.0.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/IdentifierGenerator.js"></script>
@@ -61,10 +62,6 @@
 </div>
 <div>
     <div ng-controller="plannerController as planner" ng-csp>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Launch demo modal
-        </button>
-
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
@@ -75,7 +72,42 @@
                         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <table id="historyRecords">
+                            <thead>
+                            <tr>
+                                <th>Mesocycle Name</th>
+                                <th ng-repeat="mainLift in planner.mainLifts">
+                                    {{mainLift.name}}
+                                </th>
+                                <th>Accessories</th>
+                                <th>Creation Date</th>
+                                <th>Last Update date</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="record in planner.historyRecords">
+                                <td>{{record.mesocycleName}}</td>
+                                <td ng-repeat="mainLift in planner.mainLifts">
+                                    {{getMainLiftByName(mainLift.name, record.mainLifts).oneRepMax}}
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li ng-repeat="mainLift in record.mainLifts">
+                                            {{mainLift.name}}
+                                            <ul>
+                                                <li ng-repeat="accessoryWorkExcercises in mainLift.accessoryWorkExcercises">
+                                                    {{accessoryWorkExcercises.name}} X {{accessoryWorkExcercises.sets}}
+                                                    sets X {{accessoryWorkExcercises.reps}} reps
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>{{record.creationDate.toUTCString()}}</td>
+                                <td>{{record.lastUpdateDate.toUTCString()}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -179,8 +211,10 @@
                                     <span ng-class="{'glyphicon glyphicon-repeat button-clickable': planner.isFormValid(), 'glyphicon glyphicon-repeat button-unclickable': !planner.isFormValid()}">
                                     </span> Calculate mesocycle
                             </button>
-                            <button type="button" class="btn btn-default" ng-click="planner.showHistory()">Load from
-                                History
+
+                            <button type="button" class="btn btn-primary btn-lg" ng-click="planner.loadHistory()"
+                                    data-toggle="modal" data-target="#myModal">
+                                Load from history
                             </button>
                         </div>
                     </div>
