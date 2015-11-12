@@ -5,6 +5,7 @@
     app.controller('historyController', [
         '$uibModalInstance',
         'fiveThreeOne-plannerService',
+        'historyRecords',
         function ($uibModalInstance, plannerService, historyRecords) {
             var historyController = this;
 
