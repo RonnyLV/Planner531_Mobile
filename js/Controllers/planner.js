@@ -614,7 +614,11 @@
                                 result[key].lastUpdateDate = new Date(records[key].lastUpdateDate);
                             });
 
-                            angular.copy(result, plannerController.historyRecords);
+                            if(angular.equals({}, plannerController.historyRecords)){
+                                angular.extend(plannerController.historyRecords, result);
+                            }else{
+                                angular.copy(result, plannerController.historyRecords);
+                            }
 
                             $('#historyModal').modal('show');
                         })
