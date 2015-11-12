@@ -643,7 +643,7 @@
 
                     syncClient.openOrCreateDataset('Mesocycles', function (err, dataset) {
                         var currentTime = new Date().getTime();
-                        var syncData = angular.toJson({
+                        var syncData = {
                             mesocycleName: plannerController.mesocycleName,
                             mainLifts: plannerController.mainLifts,
                             availablePlates: plannerController.availablePlates,
@@ -651,7 +651,7 @@
                             selectedMeasurementUnit: plannerController.selectedMeasurementUnit,
                             creationDate: currentTime,
                             lastUpdateDate: currentTime
-                        });
+                        };
 
                         var mesocycleId = uuid4.generate();
 
@@ -665,7 +665,7 @@
                             });
                         });
 
-                        dataset.put(mesocycleId, syncData, function (err, record) {
+                        dataset.put(mesocycleId, angular.toJson(syncData), function (err, record) {
 
                         });
 
