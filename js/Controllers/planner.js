@@ -596,7 +596,7 @@
                 saveData();
             };
 
-            plannerController.showHistory = function () {
+            plannerController.loadHistory = function () {
                 if (angular.equals({}, plannerController.historyRecords)) {
                     AWS.config.credentials.get(function (err) {
                         if (err) {
