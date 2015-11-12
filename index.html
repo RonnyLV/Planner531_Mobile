@@ -88,7 +88,7 @@
                             <tr ng-repeat="record in planner.historyRecords">
                                 <td>{{record.mesocycleName}}</td>
                                 <td ng-repeat="mainLift in planner.mainLifts">
-                                    {{getMainLiftByName(mainLift.name, record.mainLifts).oneRepMax}}
+                                    {{planner.getMainLiftByName(mainLift.name, record.mainLifts).oneRepMax}}
                                 </td>
                                 <td>
                                     <ul>
