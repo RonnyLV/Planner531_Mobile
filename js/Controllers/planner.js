@@ -1,12 +1,13 @@
 ﻿(function () {
 
-    var app = angular.module('fiveThreeOne-planner', ['LocalStorageModule', 'uuid4']);
+    var app = angular.module('fiveThreeOne-planner', ['LocalStorageModule', 'ui.bootstrap', 'uuid4']);
 
     app.controller('plannerController', [
         'localStorageService',
+        '$uibModal',
         'uuid4',
         'fiveThreeOne-plannerService',
-        function (localStorageService, uuid4, plannerService) {
+        function (localStorageService, $uibModal, uuid4, plannerService) {
             var plannerController = this;
 
             angular.extend(plannerController, {
@@ -614,19 +615,20 @@
                                 result[key].lastUpdateDate = new Date(records[key].lastUpdateDate);
                             });
 
-                            if(angular.equals({}, plannerController.historyRecords)){
-                                angular.extend(plannerController.historyRecords, result);
-                            }else{
-                                angular.copy(result, plannerController.historyRecords);
-                            }
+                            angular.copy(result, plannerController.historyRecords);
 
-                        });
-                        dataset.synchronize({
 
-                            onSuccess: function (data, newRecords) {
-                                console.log('is success');
-                                $('#historyModal').modal('show');
-                            }
+                            var modalInstance = $uibModal.open({
+                                animation: true,
+                                templateUrl: 'templates/historyRecords.html',
+                                //controller: 'historyController as history',
+                                size: 'lg'
+                                /*resolve: {
+                                    items: function () {
+                                        return $scope.items;
+                                    }
+                                }*/
+                            });
 
                         });
                     });
