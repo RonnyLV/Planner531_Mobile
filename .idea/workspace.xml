@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3c62dc2-e8cf-4c34-84d8-48792a471e10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Controllers/history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/historyRecords.html" afterPath="$PROJECT_DIR$/templates/historyRecords.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Controllers/planner.js" afterPath="$PROJECT_DIR$/js/Controllers/planner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Planner531.iws" />
@@ -50,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.091726616" vertical-offset="0" max-vertical-offset="556">
+              <caret line="3" column="113" selection-start-line="3" selection-start-column="113" selection-end-line="3" selection-end-column="113" />
               <folding />
             </state>
           </provider>
@@ -83,8 +80,8 @@
       <file leaf-file-name="planner.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Controllers/planner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7328" max-vertical-offset="7871">
-              <caret line="691" column="14" selection-start-line="691" selection-start-column="14" selection-end-line="691" selection-end-column="14" />
+            <state vertical-scroll-proportion="-3.3714285" vertical-offset="6257" max-vertical-offset="7871">
+              <caret line="620" column="64" selection-start-line="620" selection-start-column="64" selection-end-line="620" selection-end-column="64" />
               <folding>
                 <element signature="e#1181#11976#0" expanded="false" />
               </folding>
@@ -92,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historyRecords.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="historyRecords.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/historyRecords.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7111111" vertical-offset="209" max-vertical-offset="867">
+            <state vertical-scroll-proportion="-5.7704916" vertical-offset="209" max-vertical-offset="867">
               <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding />
             </state>
@@ -105,8 +102,8 @@
       <file leaf-file-name="history.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Controllers/history.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="629">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state vertical-scroll-proportion="-9.228572" vertical-offset="0" max-vertical-offset="629">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -153,11 +150,11 @@
         <option value="$PROJECT_DIR$/js/Angular/angular.js" />
         <option value="$PROJECT_DIR$/js/Services/plannerService.js" />
         <option value="$PROJECT_DIR$/js/Angular/services/angular-uuid.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/Controllers/planner.js" />
         <option value="$PROJECT_DIR$/js/Controllers/history.js" />
         <option value="$PROJECT_DIR$/templates/historyRecords.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -820,14 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.153846" vertical-offset="77" max-vertical-offset="5746">
@@ -844,28 +833,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Controllers/planner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7328" max-vertical-offset="7871">
-          <caret line="691" column="14" selection-start-line="691" selection-start-column="14" selection-end-line="691" selection-end-column="14" />
-          <folding>
-            <element signature="e#1181#11976#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/Controllers/history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="629">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state vertical-scroll-proportion="-9.228572" vertical-offset="0" max-vertical-offset="629">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/historyRecords.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7111111" vertical-offset="209" max-vertical-offset="867">
+        <state vertical-scroll-proportion="-5.7704916" vertical-offset="209" max-vertical-offset="867">
           <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Controllers/planner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3714285" vertical-offset="6257" max-vertical-offset="7871">
+          <caret line="620" column="64" selection-start-line="620" selection-start-column="64" selection-end-line="620" selection-end-column="64" />
+          <folding>
+            <element signature="e#1181#11976#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.091726616" vertical-offset="0" max-vertical-offset="556">
+          <caret line="3" column="113" selection-start-line="3" selection-start-column="113" selection-end-line="3" selection-end-column="113" />
           <folding />
         </state>
       </provider>
