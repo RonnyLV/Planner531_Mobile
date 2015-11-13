@@ -292,32 +292,32 @@
                 </div>
             </div>
         </div>
+        <script>
+            function prepareGAPI() {
+                gapi.signin2.render('my-signin2', {
+                    'scope': 'https://www.googleapis.com/auth/plus.login',
+                    'width': 200,
+                    'height': 50,
+                    'longtitle': true,
+                    'theme': 'dark',
+                    'onsuccess': function (googleUser) {
+                        console.log('Google+ Login Successful');
+                        window.planner.authorize('Google', googleUser.getAuthResponse().id_token);
+                    },
+                    'onfailure': function (error) {
+                        console.log(error);
+                    }
+                });
+                gapi.signin2.signOut = function () {
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut().then(function () {
+                        window.planner.deauthorize('Google');
+                    });
+                };
+            }
+        </script>
     </div>
 </div>
 <script src="https://apis.google.com/js/platform.js?onload=prepareGAPI" async defer></script>
-<script>
-    function prepareGAPI() {
-        gapi.signin2.render('my-signin2', {
-            'scope': 'https://www.googleapis.com/auth/plus.login',
-            'width': 200,
-            'height': 50,
-            'longtitle': true,
-            'theme': 'dark',
-            'onsuccess': function (googleUser) {
-                console.log('Google+ Login Successful');
-                window.planner.authorize('Google', googleUser.getAuthResponse().id_token);
-            },
-            'onfailure': function (error) {
-                console.log(error);
-            }
-        });
-        gapi.signin2.signOut = function () {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-                window.planner.deauthorize('Google');
-            });
-        };
-    }
-</script>
 </body>
 </html>
