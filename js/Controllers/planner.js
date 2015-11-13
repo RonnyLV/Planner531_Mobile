@@ -719,19 +719,19 @@
                     Logins: logins
                 });
 
-                plannerController.authorized = !angular.equals({}, logins);
+                return !angular.equals({}, logins);
             };
 
             window.planner = {};
 
             window.planner.authorize = plannerController.authorize = function(serviceProvider, token){
                 window.localStorage.setItem(serviceProvider + 'User', token);
-                setCognitoCreds();
+                plannerController.authorized = setCognitoCreds();
             };
 
             window.planner.deauthorize = plannerController.deauthorize = function(serviceProvider){
                 window.localStorage.setItem(serviceProvider + 'User', '');
-                setCognitoCreds();
+                plannerController.authorized = setCognitoCreds();
             };
 
             plannerService.loadFromStorage(
