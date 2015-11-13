@@ -719,7 +719,7 @@
                     Logins: logins
                 });
 
-                plannerController.authorized = angular.equals({}, logins);
+                plannerController.authorized = !angular.equals({}, logins);
             };
 
             window.planner = {};
