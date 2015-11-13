@@ -185,7 +185,7 @@
                             <span class="glyphicon glyphicon-remove"></span>
                         </button>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group" ng-show="planner.authorized">
                         <span class="input-group-addon">Mesocycle Name</span>
                         <input class="form-control" type="text" ng-model="planner.mesocycleName" required="required"/>
                         <button type="button" class="btn btn-default" ng-click="planner.sync()">Save to History</button>
