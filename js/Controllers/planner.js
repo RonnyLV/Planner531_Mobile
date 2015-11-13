@@ -725,13 +725,11 @@
             window.planner = {};
 
             window.planner.authorize = plannerController.authorize = function(serviceProvider, token){
-                plannerController.authorized = true;
                 window.localStorage.setItem(serviceProvider + 'User', token);
                 setCognitoCreds();
             };
 
             window.planner.deauthorize = plannerController.deauthorize = function(serviceProvider){
-                plannerController.authorized = false;
                 window.localStorage.setItem(serviceProvider + 'User', '');
                 setCognitoCreds();
             };
