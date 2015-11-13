@@ -174,7 +174,7 @@
                                     </span> Calculate mesocycle
                             </button>
 
-                            <button type="button" class="btn btn-primary btn-lg" ng-click="planner.loadHistory()">
+                            <button type="button" class="btn btn-primary btn-lg" ng-show="planner.isAuthorized('Google')" ng-click="planner.loadHistory()">
                                 Load from history
                             </button>
                         </div>
