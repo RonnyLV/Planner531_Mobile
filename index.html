@@ -22,27 +22,6 @@
     <script src="js/Controllers/planner.js"></script>
     <script src="js/Controllers/history.js"></script>
     <script>
-        function setSocialCreds() {
-            var getAccessToken = function (provider) {
-                if (typeof window.localStorage.getItem(provider + 'User') !== 'undefined' && window.localStorage.getItem(provider + 'User') !== '') {
-                    return window.localStorage.getItem(provider + 'User');
-                }
-                return false;
-            };
-
-            var logins = {};
-
-            if (getAccessToken('Google')) {
-                logins['accounts.google.com'] = getAccessToken('Google');
-            }
-
-            AWS.config.region = 'eu-west-1';
-
-            AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-                IdentityPoolId: 'eu-west-1:db9c449a-4ff1-41d5-aa4e-bcfabbeb237c',
-                Logins: logins
-            });
-        }
         Date.prototype.yyyymmdd = function () {
             var yyyy = this.getFullYear().toString();
             var mm = (this.getMonth() + 1).toString(); // getMonth() is zero-based
@@ -59,7 +38,7 @@
     <div id="header"></div>
 </div>
 <div>
-    <div ng-controller="plannerController as planner" ng-csp>
+    <div id="plannerController" ng-controller="plannerController as planner" ng-csp>
         <form name="calculationForm">
             <div ng-hide="planner.calculated">
                 <div class="col-lg-4 col-md-12">
@@ -327,8 +306,7 @@
             'theme': 'dark',
             'onsuccess': function (googleUser) {
                 console.log('Google+ Login Successful');
-                window.localStorage.setItem('GoogleUser', googleUser.getAuthResponse().id_token);
-                setSocialCreds();
+                angular.element($('#plannerController')).scope().authorize('Google', googleUser.getAuthResponse().id_token);
             },
             'onfailure': function (error) {
                 console.log(error);
@@ -337,8 +315,7 @@
         gapi.signin2.signOut = function () {
             var auth2 = gapi.auth2.getAuthInstance();
             auth2.signOut().then(function () {
-                window.localStorage.setItem('GoogleUser', '');
-                setSocialCreds();
+                angular.element($('#plannerController')).scope().deauthorize('Google');
             });
         };
     }

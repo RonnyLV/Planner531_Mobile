@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3c62dc2-e8cf-4c34-84d8-48792a471e10" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Controllers/planner.js" afterPath="$PROJECT_DIR$/js/Controllers/planner.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.8461537" vertical-offset="2814" max-vertical-offset="6001">
-              <caret line="176" column="118" selection-start-line="176" selection-start-column="118" selection-end-line="176" selection-end-column="118" />
+            <state vertical-scroll-proportion="-11.384615" vertical-offset="5093" max-vertical-offset="5610">
+              <caret line="317" column="87" selection-start-line="317" selection-start-column="87" selection-end-line="317" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -100,8 +101,8 @@
       <file leaf-file-name="planner.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Controllers/planner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78268874" vertical-offset="11458" max-vertical-offset="12189">
-              <caret line="699" column="165" selection-start-line="699" selection-start-column="165" selection-end-line="699" selection-end-column="165" />
+            <state vertical-scroll-proportion="0.27992633" vertical-offset="11952" max-vertical-offset="12733">
+              <caret line="712" column="17" selection-start-line="712" selection-start-column="17" selection-end-line="712" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -764,14 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Services/plannerService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2444" max-vertical-offset="3961">
-          <caret line="154" column="74" selection-start-line="154" selection-start-column="74" selection-end-line="154" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1144" max-vertical-offset="1768">
@@ -780,18 +773,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/Services/plannerService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2444" max-vertical-offset="3961">
+          <caret line="154" column="74" selection-start-line="154" selection-start-column="74" selection-end-line="154" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8461537" vertical-offset="2814" max-vertical-offset="6001">
-          <caret line="176" column="118" selection-start-line="176" selection-start-column="118" selection-end-line="176" selection-end-column="118" />
+        <state vertical-scroll-proportion="-11.384615" vertical-offset="5093" max-vertical-offset="5610">
+          <caret line="317" column="87" selection-start-line="317" selection-start-column="87" selection-end-line="317" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Controllers/planner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78268874" vertical-offset="11458" max-vertical-offset="12189">
-          <caret line="699" column="165" selection-start-line="699" selection-start-column="165" selection-end-line="699" selection-end-column="165" />
+        <state vertical-scroll-proportion="0.27992633" vertical-offset="11952" max-vertical-offset="12733">
+          <caret line="712" column="17" selection-start-line="712" selection-start-column="17" selection-end-line="712" selection-end-column="17" />
           <folding />
         </state>
       </provider>
