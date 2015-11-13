@@ -738,6 +738,8 @@
                 , plannerController.selectedAccessoryWorkTemplate
                 , plannerController.selectedMeasurementUnit
             );
+
+            setCognitoCreds();
         }
     ]);
 
