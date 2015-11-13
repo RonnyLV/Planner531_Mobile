@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <div class="col-lg-offset-2 col-lg-4 col-md-12">
-                    <div id="my-signin2" ng-hide="planner.isAuthorized('Google')"></div>
-                    <button type="button" class="btn btn-default" onclick="gapi.signin2.signOut()" ng-show="planner.isAuthorized('Google')">Logout Google+
+                    <div id="my-signin2" ng-hide="planner.authorized"></div>
+                    <button type="button" class="btn btn-default" onclick="gapi.signin2.signOut()" ng-show="planner.authorized">Logout Google+
                     </button>
                 </div>
                 <div class="clearfix"></div>
@@ -153,7 +153,7 @@
                                     </span> Calculate mesocycle
                             </button>
 
-                            <button type="button" class="btn btn-primary btn-lg" ng-show="planner.isAuthorized('Google')" ng-click="planner.loadHistory()">
+                            <button type="button" class="btn btn-primary btn-lg" ng-show="planner.authorized" ng-click="planner.loadHistory()">
                                 Load from history
                             </button>
                         </div>
