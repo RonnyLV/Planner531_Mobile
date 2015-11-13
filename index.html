@@ -305,7 +305,7 @@
             'theme': 'dark',
             'onsuccess': function (googleUser) {
                 console.log('Google+ Login Successful');
-                angular.element($('#plannerController')).scope().authorize('Google', googleUser.getAuthResponse().id_token);
+                window.planner.authorize('Google', googleUser.getAuthResponse().id_token);
             },
             'onfailure': function (error) {
                 console.log(error);
@@ -314,7 +314,7 @@
         gapi.signin2.signOut = function () {
             var auth2 = gapi.auth2.getAuthInstance();
             auth2.signOut().then(function () {
-                angular.element($('#plannerController')).scope().deauthorize('Google');
+                window.planner.deauthorize('Google');
             });
         };
     }
