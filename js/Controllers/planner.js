@@ -697,10 +697,7 @@
             };
 
             plannerController.isAuthorized = function(serviceProvider){
-                if (typeof window.localStorage.getItem(serviceProvider + 'User') !== 'undefined' && window.localStorage.getItem(serviceProvider + 'User') !== '') {
-                    return window.localStorage.getItem(serviceProvider + 'User');
-                }
-                return false;
+                return (typeof window.localStorage.getItem(serviceProvider + 'User') !== 'undefined' && window.localStorage.getItem(serviceProvider + 'User') !== '');
             };
 
             plannerService.loadFromStorage(
