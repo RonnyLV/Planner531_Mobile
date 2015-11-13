@@ -615,6 +615,12 @@
                     var result = {};
 
                     syncClient.openOrCreateDataset('Mesocycles', function (err, dataset) {
+                        dataset.synchronize({
+                            onSuccess: function (data, newRecords) {
+                                console.log('is success');
+                            }
+                        });
+
                         dataset.getAll(function (err, records) {
                             angular.forEach(records, function (value, key) {
                                 result[key] = angular.fromJson(records[key]);
@@ -686,11 +692,9 @@
                         });
 
                         dataset.synchronize({
-
                             onSuccess: function (data, newRecords) {
                                 console.log('is success');
                             }
-
                         });
 
                     });
