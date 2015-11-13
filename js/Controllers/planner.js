@@ -718,6 +718,8 @@
                     IdentityPoolId: 'eu-west-1:db9c449a-4ff1-41d5-aa4e-bcfabbeb237c',
                     Logins: logins
                 });
+
+                plannerController.authorized = angular.equals({}, logins);
             };
 
             window.planner = {};
