@@ -59,25 +59,39 @@
     <div id="header"></div>
 </div>
 <div>
-    <div id="my-signin2"></div>
-    <button type="button" class="btn btn-default" onclick="gapi.signin2.signOut()">Logout Google+</button>
-</div>
-<div>
     <div ng-controller="plannerController as planner" ng-csp>
         <form name="calculationForm">
             <div ng-hide="planner.calculated">
-                <div class="col-lg-12">
+                <div class="col-lg-4 col-md-12">
                     <div class="input-group">
                         <span class="input-group-addon">Units of measurement</span>
 
-                        <div class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" ng-repeat="measurementUnit in planner.measurementUnits"
+                                    ng-class="{'active':measurementUnit==planner.selectedMeasurementUnit}"
+                                    ng-click="planner.setMeasurementUnit(measurementUnit)">{{measurementUnit}}
+                            </button>
+                        </span>
+
+                        <!--<div class="form-control">
+                            <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                                <button type="button" class="btn btn-default">Left</button>
+                                <button type="button" class="btn btn-default">Middle</button>
+                                <button type="button" class="btn btn-default">Right</button>
+                            </div>
                             <p ng-repeat="measurementUnit in planner.measurementUnits">
                                 <input type="radio" ng-model="planner.selectedMeasurementUnit"
                                        value="{{measurementUnit}}" ng-change="planner.saveDataToLocalStorage()">
                                 {{measurementUnit}} </p>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
+                <div class="col-lg-offset-2 col-lg-4 col-md-12">
+                    <div id="my-signin2" ng-hide="planner.isAuthorized('Google')"></div>
+                    <button type="button" class="btn btn-default" onclick="gapi.signin2.signOut()" ng-show="planner.isAuthorized('Google')">Logout Google+
+                    </button>
+                </div>
+                <div class="clearfix"></div>
                 <div class="main-lift col-lg-6" ng-repeat="mainLift in planner.mainLifts">
                     <div class="input-group">
                         <span class="label label-default">{{mainLift.name}}</span>
@@ -166,6 +180,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </form>
 
@@ -187,7 +202,7 @@
                         </button>
                         <button type="button"
                                 ng-class="{'btn btn-default btn-sm plateNotUsedForCalculation': !planner.printableVersion, 'btn btn-default btn-sm': planner.printableVersion}"
-                                ng-click="disablePrintableVersion(availablePlate)"
+                                ng-click="planner.disablePrintableVersion()"
                                 ng-disabled="!planner.printableVersion">
                             <span class="glyphicon glyphicon-remove"></span>
                         </button>

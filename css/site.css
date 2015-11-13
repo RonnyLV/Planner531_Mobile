@@ -89,6 +89,11 @@
 }
 
 /*angular overrides*/
-.ng-invalid {
+input.ng-invalid {
     box-shadow: 0 0 7px crimson !important;
+}
+
+.form-control {
+    height: auto !important;
+    min-height: 34px!important;
 }

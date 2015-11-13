@@ -555,7 +555,7 @@
             };
 
             plannerController.getAvailablePlates = function () {
-                if (plannerController.measurementUnits == 'lbs') {
+                if (plannerController.selectedMeasurementUnit == 'lbs') {
                     return plannerController.availablePlates.inLbs;
                 } else {
                     return plannerController.availablePlates.inKg;
@@ -594,6 +594,11 @@
                 mainLift.shouldEstimateOneRepMax = false;
                 mainLift.oneRepMax = null;
                 mainLift.ninetyPercentOfOneRepMax = null;
+                saveData();
+            };
+
+            plannerController.setMeasurementUnit = function (measurementUnit) {
+                plannerController.selectedMeasurementUnit = measurementUnit;
                 saveData();
             };
 
@@ -689,6 +694,13 @@
                     });
 
                 });
+            };
+
+            plannerController.isAuthorized = function(serviceProvider){
+                if (typeof window.localStorage.getItem(serviceProvider + 'User') !== 'undefined' && window.localStorage.getItem(serviceProvider + 'User') !== '') {
+                    return window.localStorage.getItem(serviceProvider + 'User');
+                }
+                return false;
             };
 
             plannerService.loadFromStorage(
